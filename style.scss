@@ -54,7 +54,8 @@ body{
     padding-right: 8.2rem;
 }
 .banner{
-    position: relative;;
+    position: relative;
+    margin-top: 3rem;
 }
 .banner__inner{
    display: flex;
@@ -97,4 +98,103 @@ body{
     position: absolute;
     right: 0%;
     bottom: 0%;
+}
+.banner__right-bottom-2{
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+}
+.banner__right-bottom-3{
+    position: absolute;
+    right: 0%;
+    bottom: 3%;
+}
+.banner__left-middle-1{
+    position: absolute;
+    left: 16%;
+    bottom: 18%;
+}
+.banner__left-middle-2{
+    position: absolute;
+    left: 11%;
+    bottom: 50%;
+}
+.banner__right-top-1{
+    position: absolute;
+    right: 2%;
+    top: 0%;
+    z-index: 2;
+}
+.banner__right-top-2{
+    position: absolute;
+    right: 7%;
+    top: 0%;
+    z-index: 1;
+}
+.banner__right-top-3{
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    z-index: 0;
+}
+.banner__left-top-1{
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    z-index: 0;
+}
+.banner__left-top-2{
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    z-index: 1;
+}
+.banner-2{
+    position: relative;
+}
+.banner-2__inner{
+    background-image: url(image/banner2.png);
+    height: 80rem;
+}
+.banner-2__content{
+    width: 60%;
+    padding: 5rem;
+    padding-top: 15rem; 
+    // position: absolute;
+    left: 50%;
+    top:25%;
+}
+.program__inner{
+    display: flex;
+    width: 100%;
+    align-items:baseline;
+    height: 47rem;
+    padding-top: 6rem;
+}
+.program__content{
+    width: 33.333333%;
+    padding: 5rem;
+    padding-left: 14rem;
+    position: relative;
+    text-align: center;
+}
+.bg-program-1__image{
+    position: absolute;
+    
+}
+.bg-program-2__image{
+    position: absolute;
+    
+}.bg-program-3__image{
+    position: absolute;
+}
+.program__title{
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding-top: 3rem;
+}
+.program__desc{
+    font-size: 1.8rem;
+    padding-top: 6px;
 }
