@@ -231,11 +231,13 @@ body {
 }
 
 .yoga-breathing {
-  height: 63.3rem;
+  height: 85rem;
+  position: relative;
 }
 
 .yoga-breathing__inner {
   display: flex;
+  padding: 20rem 0rem;
 }
 
 .yoga-breathing__content {
@@ -246,6 +248,45 @@ body {
 .yoga-breathing__image {
   width: 50%;
   padding: 3rem;
+  z-index: 50;
+}
+
+.yoga-breathing-wrapper-left-top-corner-1 {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  z-index: 0;
+}
+
+.yoga-breathing-wrapper-left-top-corner-2 {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+}
+
+.yoga-breathing-wrapper-left-bottom-corner-1 {
+  position: absolute;
+  left: 1%;
+  bottom: 9%;
+}
+
+.yoga-breathing-wrapper-left-bottom-corner-2 {
+  position: absolute;
+  left: 0%;
+  bottom: 0%;
+  z-index: 10;
+}
+
+.yoga-breathing-left-top-corner-1 {
+  position: absolute;
+  left: 47%;
+  top: 19%;
+}
+
+.yoga-breathing-left-top-corner-2 {
+  position: absolute;
+  left: 47%;
+  top: 19%;
 }
 
 /*# sourceMappingURL=style.css.map */
