@@ -289,4 +289,92 @@ body {
   top: 19%;
 }
 
+.yoga-breathing-left-top-corner-1 {
+  position: absolute;
+  left: 47%;
+  top: 19%;
+}
+
+.yoga-breathing-left-top-corner-2 {
+  position: absolute;
+  left: 47%;
+  top: 19%;
+}
+
+.yoga-breathing-left-bottom-corner {
+  position: absolute;
+  left: 50%;
+  bottom: 19%;
+  z-index: 200;
+}
+
+.yoga-breathing-right-top-corner-1 {
+  position: absolute;
+  right: 3%;
+  top: 19%;
+}
+
+.yoga-breathing-right-top-corner-2 {
+  position: absolute;
+  right: 2%;
+  top: 19%;
+}
+
+.yoga-breathing-right-bottom-corner-1 {
+  position: absolute;
+  right: 2%;
+  bottom: 19%;
+  z-index: 500;
+}
+
+.yoga-breathing-right-bottom-corner-2 {
+  position: absolute;
+  right: 2%;
+  bottom: 19%;
+  z-index: 500;
+}
+
+.discount-course {
+  height: 60.5rem;
+  background-image: url(image/banner-discount-course.png);
+  margin-top: 0;
+}
+
+.discount-course__content {
+  width: 50%;
+  margin-left: 50%;
+  padding: 3rem;
+  padding-bottom: 11rem;
+}
+
+.gallery {
+  height: 95.6rem;
+}
+
+.gallery__title {
+  line-height: 8rem;
+  font-size: 6rem;
+  color: #484f5b;
+  font-weight: bolder;
+  letter-spacing: 5px;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.gallery__desc {
+  text-align: center;
+  font-size: 1.6rem;
+  padding: 2rem 10rem;
+  line-height: 3rem;
+}
+
+.gallery__content {
+  display: flex;
+}
+
+.gallery__item {
+  width: 33%;
+  padding: 0 7rem;
+}
+
 /*# sourceMappingURL=style.css.map */
