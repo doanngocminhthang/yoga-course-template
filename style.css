@@ -370,11 +370,206 @@ body {
 
 .gallery__content {
   display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
 }
 
 .gallery__item {
-  width: 33%;
-  padding: 0 7rem;
+  width: 27%;
+  box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
+
+.gallery__title-small {
+  font-size: 3rem;
+  padding-top: 2rem;
+  color: #484f5b;
+  font-weight: bold;
+}
+
+.gallery__desc-small {
+  font-size: 1.5rem;
+  padding: 2rem;
+  line-height: 2rem;
+}
+
+.yoga-training {
+  height: 75rem;
+  background-color: #e6c8c3;
+}
+
+.yoga-training__inner {
+  display: flex;
+  padding-top: 15rem;
+}
+
+.yoga-training__title {
+  line-height: 6rem;
+  font-size: 5rem;
+  color: #484f5b;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  margin-top: 5rem;
+}
+
+.yoga-training__desc {
+  font-size: 1.6rem;
+  line-height: 3rem;
+  padding-top: 3rem;
+  padding-right: 1rem;
+}
+
+.yoga-training__image {
+  width: 50%;
+}
+
+.yoga-training__content {
+  width: 50%;
+}
+
+.yoga-training__group-icon {
+  display: flex;
+  margin-top: 3rem;
+}
+
+.yoga-training__item-1 {
+  padding: 1rem 1.5rem;
+  background-color: #484f5b;
+}
+
+.yoga-training__item-2 {
+  padding: 0.9rem;
+  background-color: #484f5b;
+  margin-left: 3rem;
+}
+
+.yoga-training__item-3 {
+  padding: 1.1rem;
+  background-color: #484f5b;
+  margin-left: 3rem;
+}
+
+.form-message {
+  padding-bottom: 5rem;
+}
+
+.fomr-message__title {
+  line-height: 8rem;
+  font-size: 5rem;
+  color: #484f5b;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.form-message__desc {
+  text-align: center;
+  font-size: 1.6rem;
+  padding: 2rem 10rem;
+  line-height: 3rem;
+}
+
+.form-message__form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+input {
+  width: 70%;
+  border: #b0b0b0;
+  margin-top: 2rem;
+  color: #b0b0b0;
+  height: 5rem;
+  padding: 2rem 3rem;
+  background-color: #efefef;
+}
+
+textarea {
+  width: 70%;
+  font-family: "PT Sans", sans-serif;
+  font-size: 1.6rem;
+  border: #b0b0b0;
+  margin-top: 2rem;
+  color: #b0b0b0;
+  padding: 2rem 3rem;
+  background-color: #efefef;
+}
+
+.footer {
+  height: 32.4rem;
+  background-color: #484f5b;
+}
+
+.footer__inner {
+  display: flex;
+  padding: 5rem 20rem;
+  font-size: 1.5rem;
+  line-height: 3rem;
+  color: white;
+}
+
+.footer__address {
+  width: 20%;
+}
+
+.footer__sitemap {
+  width: 15%;
+}
+
+.footer__content-1 {
+  width: 15%;
+}
+
+.footer__content-2 {
+  width: 15%;
+}
+
+.footer__copy-right {
+  width: 35%;
+}
+
+.footer__address {
+  font-size: 1.5rem;
+}
+
+.footer__title {
+  font-size: 3rem;
+  padding-bottom: 3rem;
+  font-weight: bold;
+}
+
+.footer__tilte-small {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.footer__image {
+  padding-bottom: 3rem;
+}
+
+.footer__social {
+  display: flex;
+  margin-top: 2rem;
+}
+
+.footer-fb {
+  background: white;
+  padding: 0.5rem;
+}
+
+.footer-tw {
+  background: white;
+  padding: 0.5rem;
+  margin-left: 2rem;
+}
+
+.footer-insta {
+  background: white;
+  padding: 0.5rem;
+  margin-left: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */
