@@ -335,6 +335,7 @@ body {
 }
 
 .discount-course {
+  position: relative;
   height: 60.5rem;
   background-image: url(image/banner-discount-course.png);
   margin-top: 0;
@@ -344,11 +345,38 @@ body {
   width: 50%;
   margin-left: 50%;
   padding: 3rem;
-  padding-bottom: 11rem;
+  padding-top: 7rem;
+}
+
+.discount-course__title {
+  line-height: 8rem;
+  font-size: 7rem;
+  color: #484f5b;
+  font-weight: bolder;
+  letter-spacing: 3px;
+}
+
+.discount-course__desc {
+  padding-top: 3rem;
+  font-size: 1.5rem;
+  line-height: 3rem;
+  padding-right: 14rem;
+}
+
+.discount-course-middle {
+  position: absolute;
+  left: 50%;
+  top: 8%;
 }
 
 .gallery {
   height: 95.6rem;
+  position: relative;
+  z-index: 0;
+}
+
+.gallery__inner {
+  position: relative;
 }
 
 .gallery__title {
@@ -391,6 +419,66 @@ body {
   font-size: 1.5rem;
   padding: 2rem;
   line-height: 2rem;
+}
+
+.gallery-left-top-1 {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  z-index: 0;
+}
+
+.gallery-left-top-2 {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+}
+
+.gallery-left-bottom-1 {
+  position: absolute;
+  left: 0%;
+  bottom: -2%;
+  z-index: 10;
+}
+
+.gallery-left-bottom-2 {
+  position: absolute;
+  left: 0%;
+  bottom: 0%;
+  z-index: 0;
+}
+
+.gallery-right-top-1 {
+  position: absolute;
+  right: 0%;
+  top: -8%;
+  z-index: 100;
+}
+
+.gallery-right-top-2 {
+  position: absolute;
+  right: 0%;
+  top: 10%;
+}
+
+.gallery-right-top-3 {
+  position: absolute;
+  right: 0%;
+  top: -5.2%;
+}
+
+.gallery-right-bottom-1 {
+  position: absolute;
+  right: 2%;
+  bottom: 19%;
+  z-index: 0;
+}
+
+.gallery-right-bottom-2 {
+  position: absolute;
+  right: 2%;
+  bottom: 19%;
+  z-index: 0;
 }
 
 .yoga-training {
@@ -451,6 +539,7 @@ body {
 
 .form-message {
   padding-bottom: 5rem;
+  position: relative;
 }
 
 .fomr-message__title {
@@ -475,6 +564,66 @@ body {
   flex-direction: column;
   text-align: center;
   align-items: center;
+}
+
+.form-message-left-top-1 {
+  position: absolute;
+  left: 3%;
+  top: 0%;
+  z-index: 0;
+}
+
+.form-message-left-top-2 {
+  position: absolute;
+  left: 5%;
+  top: 0%;
+}
+
+.form-message-left-bottom-1 {
+  position: absolute;
+  left: 0%;
+  bottom: -2%;
+  z-index: 10;
+}
+
+.form-message-left-bottom-2 {
+  position: absolute;
+  left: 0%;
+  bottom: 0%;
+  z-index: 0;
+}
+
+.form-message-right-top-1 {
+  position: absolute;
+  right: 0%;
+  top: -13%;
+  z-index: 100;
+}
+
+.form-message-right-top-2 {
+  position: absolute;
+  right: 0%;
+  top: 10%;
+}
+
+.form-message-right-top-3 {
+  position: absolute;
+  right: 0%;
+  top: -8.4%;
+}
+
+.form-message-right-bottom-1 {
+  position: absolute;
+  right: 2%;
+  bottom: 19%;
+  z-index: 0;
+}
+
+.form-message-right-bottom-2 {
+  position: absolute;
+  right: 2%;
+  bottom: 10%;
+  z-index: 0;
 }
 
 input {

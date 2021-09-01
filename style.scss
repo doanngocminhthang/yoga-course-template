@@ -284,6 +284,7 @@ body {
   z-index: 500;
 }
 .discount-course {
+  position: relative;
   height: 60.5rem;
   background-image: url(image/banner-discount-course.png);
   margin-top: 0;
@@ -292,10 +293,34 @@ body {
   width: 50%;
   margin-left: 50%;
   padding: 3rem;
-  padding-bottom: 11rem;
+  padding-top: 7rem;
+}
+
+.discount-course__title {
+  line-height: 8rem;
+  font-size: 7rem;
+  color: #484f5b;
+  font-weight: bolder;
+  letter-spacing: 3px;
+}
+.discount-course__desc {
+  padding-top: 3rem;
+  font-size: 1.5rem;
+  line-height: 3rem;
+  padding-right: 14rem;
+}
+.discount-course-middle {
+  position: absolute;
+  left: 50%;
+  top: 8%;
 }
 .gallery {
   height: 95.6rem;
+  position: relative;
+  z-index: 0;
+}
+.gallery__inner{
+  position: relative;
 }
 .gallery__title {
   line-height: 8rem;
@@ -322,27 +347,78 @@ body {
   box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   text-align: center;
 }
-.gallery__title-small{
+.gallery__title-small {
   font-size: 3rem;
   padding-top: 2rem;
   color: #484f5b;
   font-weight: bold;
 }
-.gallery__desc-small{
- font-size: 1.5rem;
- padding: 2rem;
- line-height: 2rem;
+.gallery__desc-small {
+  font-size: 1.5rem;
+  padding: 2rem;
+  line-height: 2rem;
 }
-.yoga-training{
-  height: 75rem ;
-  background-color: #e6c8c3;
+.gallery-left-top-1 {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  z-index: 0;
 }
-.yoga-training__inner{
-  display: flex;
-  padding-top: 15rem;
+.gallery-left-top-2 {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+}
+.gallery-left-bottom-1 {
+  position: absolute;
+  left: 0%;
+  bottom: -2%;
+  z-index: 10;
+}
+.gallery-left-bottom-2 {
+  position: absolute;
+  left: 0%;
+  bottom: 0%;
+  z-index: 0;
+}
+.gallery-right-top-1 {
+  position: absolute;
+  right: 0%;
+  top: -8%;
+  z-index: 100;
+}
+.gallery-right-top-2 {
+  position: absolute;
+  right: 0%;
+  top: 10%;
+}
+.gallery-right-top-3 {
+  position: absolute;
+  right: 0%;
+  top:-5.2%;
   
 }
-.yoga-training__title{
+.gallery-right-bottom-1 {
+  position: absolute;
+  right: 2%;
+  bottom: 19%;
+  z-index: 0;
+}
+.gallery-right-bottom-2 {
+  position: absolute;
+  right: 2%;
+  bottom: 19%;
+  z-index: 0;
+}
+.yoga-training {
+  height: 75rem;
+  background-color: #e6c8c3;
+}
+.yoga-training__inner {
+  display: flex;
+  padding-top: 15rem;
+}
+.yoga-training__title {
   line-height: 6rem;
   font-size: 5rem;
   color: #484f5b;
@@ -356,35 +432,35 @@ body {
   padding-top: 3rem;
   padding-right: 1rem;
 }
-.yoga-training__image{
+.yoga-training__image {
   width: 50%;
 }
-.yoga-training__content{
+.yoga-training__content {
   width: 50%;
 }
-.yoga-training__group-icon{
+.yoga-training__group-icon {
   display: flex;
   margin-top: 3rem;
-  
 }
-.yoga-training__item-1{
+.yoga-training__item-1 {
   padding: 1rem 1.5rem;
-  background-color:#484f5b ;
+  background-color: #484f5b;
 }
-.yoga-training__item-2{
+.yoga-training__item-2 {
   padding: 0.9rem;
-  background-color:#484f5b ;
+  background-color: #484f5b;
   margin-left: 3rem;
 }
-.yoga-training__item-3{
+.yoga-training__item-3 {
   padding: 1.1rem;
-  background-color:#484f5b ;
+  background-color: #484f5b;
   margin-left: 3rem;
 }
-.form-message{
+.form-message {
   padding-bottom: 5rem;
+  position: relative;
 }
-.fomr-message__title{
+.fomr-message__title {
   line-height: 8rem;
   font-size: 5rem;
   color: #484f5b;
@@ -393,19 +469,71 @@ body {
   text-align: center;
   margin-top: 5rem;
 }
-.form-message__desc{
+.form-message__desc {
   text-align: center;
   font-size: 1.6rem;
   padding: 2rem 10rem;
   line-height: 3rem;
 }
-.form-message__form{
+.form-message__form {
   display: flex;
   flex-direction: column;
   text-align: center;
   align-items: center;
 }
-input{
+.form-message-left-top-1 {
+  position: absolute;
+  left: 3%;
+  top: 0%;
+  z-index: 0;
+}
+.form-message-left-top-2 {
+  position: absolute;
+  left: 5%;
+  top: 0%;
+}
+.form-message-left-bottom-1 {
+  position: absolute;
+  left: 0%;
+  bottom: -2%;
+  z-index: 10;
+}
+.form-message-left-bottom-2 {
+  position: absolute;
+  left: 0%;
+  bottom: 0%;
+  z-index: 0;
+}
+.form-message-right-top-1 {
+  position: absolute;
+  right: 0%;
+  top: -13%;
+  z-index: 100;
+}
+.form-message-right-top-2 {
+  position: absolute;
+  right: 0%;
+  top: 10%;
+}
+.form-message-right-top-3 {
+  position: absolute;
+  right: 0%;
+  top:-8.4%;
+  
+}
+.form-message-right-bottom-1 {
+  position: absolute;
+  right: 2%;
+  bottom: 19%;
+  z-index: 0;
+}
+.form-message-right-bottom-2 {
+  position: absolute;
+  right: 2%;
+  bottom: 10%;
+  z-index: 0;
+}
+input {
   width: 70%;
   border: #b0b0b0;
   margin-top: 2rem;
@@ -414,7 +542,7 @@ input{
   padding: 2rem 3rem;
   background-color: #efefef;
 }
-textarea{
+textarea {
   width: 70%;
   font-family: "PT Sans", sans-serif;
   font-size: 1.6rem;
@@ -424,62 +552,61 @@ textarea{
   padding: 2rem 3rem;
   background-color: #efefef;
 }
-.footer{
-  height: 32.4rem ;
+.footer {
+  height: 32.4rem;
   background-color: #484f5b;
 }
-.footer__inner{
+.footer__inner {
   display: flex;
-  padding: 5rem 20rem ;
+  padding: 5rem 20rem;
   font-size: 1.5rem;
   line-height: 3rem;
   color: white;
 }
-.footer__address{
+.footer__address {
   width: 20%;
 }
-.footer__sitemap{
+.footer__sitemap {
   width: 15%;
 }
-.footer__content-1{
+.footer__content-1 {
   width: 15%;
 }
-.footer__content-2{
+.footer__content-2 {
   width: 15%;
 }
-.footer__copy-right{
+.footer__copy-right {
   width: 35%;
 }
-.footer__address{
+.footer__address {
   font-size: 1.5rem;
 }
-.footer__title{
+.footer__title {
   font-size: 3rem;
   padding-bottom: 3rem;
   font-weight: bold;
 }
-.footer__tilte-small{
+.footer__tilte-small {
   font-size: 2rem;
   font-weight: bold;
 }
-.footer__image{
+.footer__image {
   padding-bottom: 3rem;
-
 }
-.footer__social{
-  display: flex; 
+.footer__social {
+  display: flex;
   margin-top: 2rem;
 }
-.footer-fb{
-background: white;
-padding: 0.5rem;
+.footer-fb {
+  background: white;
+  padding: 0.5rem;
 }
-.footer-tw{
+.footer-tw {
   background: white;
   padding: 0.5rem;
   margin-left: 2rem;
 }
-.footer-insta{
+.footer-insta {
   background: white;
   padding: 0.5rem;
   margin-left: 2rem;
