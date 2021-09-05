@@ -27,41 +27,148 @@ body {
   padding-left: 2rem;
   padding-right: 2rem;
 }
+
 .header {
   padding-top: 4rem;
   justify-content: space-between;
 }
+
 .header__inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .logo {
   width: 9.2rem;
   height: 8rem;
 }
+
 .header__menu-list {
   display: flex;
   font-size: 2.1rem;
 }
+
 .header__menu-link {
   list-style-type: none;
   text-decoration: none;
   color: black;
 }
+
 .header__menu-item {
   padding-right: 8.2rem;
 }
+
+.header a:hover {
+  color: #e6c8c3;
+}
+.header__icon {
+  display: none;
+  text-decoration: none;
+  color: #101010;
+}
+.fa-bars {
+  display: none;
+  font-size: 2.4rem;
+}
+
+.header-mobile{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  display: none;
+}
+
+.nav__overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  animation: fadeIn linear 0.4s;
+}
+
+.nav__mobile {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 320px;
+  background-color: #fff;
+  transform: translateX(100%);
+  transition: transform linear 0.4s;
+
+}
+
+.nav__mobile-list {
+  margin-top: 24px;
+}
+
+.nav__mobile-link {
+  text-decoration: none;
+  color: #333;
+  display: block;
+  padding: 8px 0;
+  font-size: 1.4rem;
+}
+
+.nav__input{
+  display: none;
+}
+
+.nav__mobile-close{
+font-size: 1.4rem;
+color: #666;
+position: absolute;
+right: 1rem;
+top: 1rem;
+}
+
+.nav__input:checked ~ .nav__overlay{
+  display: block;
+}
+
+.nav__input:checked ~ .nav__mobile{
+  transform: translateX(0%);
+}
+
+@keyframes fadeIn{
+  from {opacity: 0;}
+  to{opacity: 1;}
+}
+
+@media screen and (max-width: 1024px) {
+  .header__inner{display: none;}
+  .header-mobile{display: flex;}
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #101010;
+}
+
+
+
 .banner {
   position: relative;
   margin-top: 3rem;
 }
+
 .banner__inner {
   display: flex;
 }
+
 .banner__col-1 {
   width: 50%;
 }
+
 .banner__col-2 {
   width: 50%;
   padding: 5rem;
@@ -70,6 +177,7 @@ body {
   left: 50%;
   top: 20%;
 }
+
 .banner__title {
   line-height: 8rem;
   font-size: 8rem;
@@ -77,12 +185,14 @@ body {
   font-weight: bolder;
   letter-spacing: 5px;
 }
+
 .banner__desc {
   padding-top: 3rem;
   font-size: 2rem;
   line-height: 3rem;
   padding-right: 14rem;
 }
+
 .banner__btn {
   margin-top: 5rem;
   padding: 1rem 3rem;
@@ -93,68 +203,81 @@ body {
   font-weight: bolder;
   border: none;
 }
+
 .banner__right-bottom-1 {
   position: absolute;
   right: 0%;
   bottom: 0%;
 }
+
 .banner__right-bottom-2 {
   position: absolute;
   right: 0%;
   bottom: 0%;
 }
+
 .banner__right-bottom-3 {
   position: absolute;
   right: 0%;
   bottom: 3%;
 }
+
 .banner__left-middle-1 {
   position: absolute;
   left: 16%;
   bottom: 18%;
 }
+
 .banner__left-middle-2 {
   position: absolute;
   left: 11%;
   bottom: 50%;
 }
+
 .banner__right-top-1 {
   position: absolute;
   right: 2%;
   top: 0%;
   z-index: 2;
 }
+
 .banner__right-top-2 {
   position: absolute;
   right: 7%;
   top: 0%;
   z-index: 1;
 }
+
 .banner__right-top-3 {
   position: absolute;
   right: 0%;
   top: 0%;
   z-index: 0;
 }
+
 .banner__left-top-1 {
   position: absolute;
   left: 0%;
   top: 0%;
   z-index: 0;
 }
+
 .banner__left-top-2 {
   position: absolute;
   left: 0%;
   top: 0%;
   z-index: 1;
 }
+
 .banner-2 {
   position: relative;
 }
+
 .banner-2__inner {
   background-image: url(image/banner2.png);
   height: 80rem;
 }
+
 .banner-2__content {
   width: 60%;
   padding: 5rem;
@@ -163,6 +286,7 @@ body {
   left: 50%;
   top: 25%;
 }
+
 .program__inner {
   display: flex;
   width: 100%;
@@ -170,6 +294,7 @@ body {
   height: 47rem;
   padding-top: 6rem;
 }
+
 .program__content {
   width: 33.333333%;
   padding: 5rem;
@@ -177,118 +302,142 @@ body {
   position: relative;
   text-align: center;
 }
+
 .bg-program-1__image {
   position: absolute;
 }
+
 .bg-program-2__image {
   position: absolute;
 }
+
 .bg-program-3__image {
   position: absolute;
 }
+
 .program__title {
   font-size: 3rem;
   font-weight: bold;
   letter-spacing: 1px;
   padding-top: 3rem;
 }
+
 .program__desc {
   font-size: 1.8rem;
   padding-top: 6px;
 }
+
 .yoga-breathing {
   height: 85rem;
   position: relative;
 }
+
 .yoga-breathing__inner {
   display: flex;
   padding: 20rem 0rem;
 }
+
 .yoga-breathing__content {
   width: 50%;
   padding: 2rem;
 }
+
 .yoga-breathing__image {
   width: 50%;
   padding: 3rem;
   z-index: 50;
 }
+
 .yoga-breathing-wrapper-left-top-corner-1 {
   position: absolute;
   left: 0%;
   top: 0%;
   z-index: 0;
 }
+
 .yoga-breathing-wrapper-left-top-corner-2 {
   position: absolute;
   left: 0%;
   top: 0%;
 }
+
 .yoga-breathing-wrapper-left-bottom-corner-1 {
   position: absolute;
   left: 1%;
   bottom: 9%;
 }
+
 .yoga-breathing-wrapper-left-bottom-corner-2 {
   position: absolute;
   left: 0%;
   bottom: 0%;
   z-index: 10;
 }
+
 .yoga-breathing-left-top-corner-1 {
   position: absolute;
   left: 47%;
   top: 19%;
 }
+
 .yoga-breathing-left-top-corner-2 {
   position: absolute;
   left: 47%;
   top: 19%;
 }
+
 .yoga-breathing-left-top-corner-1 {
   position: absolute;
   left: 47%;
   top: 19%;
 }
+
 .yoga-breathing-left-top-corner-2 {
   position: absolute;
   left: 47%;
   top: 19%;
 }
+
 .yoga-breathing-left-bottom-corner {
   position: absolute;
   left: 50%;
   bottom: 19%;
   z-index: 200;
 }
+
 .yoga-breathing-right-top-corner-1 {
   position: absolute;
   right: 3%;
   top: 19%;
 }
+
 .yoga-breathing-right-top-corner-2 {
   position: absolute;
   right: 2%;
   top: 19%;
 }
+
 .yoga-breathing-right-bottom-corner-1 {
   position: absolute;
   right: 2%;
   bottom: 19%;
   z-index: 500;
 }
+
 .yoga-breathing-right-bottom-corner-2 {
   position: absolute;
   right: 2%;
   bottom: 19%;
   z-index: 500;
 }
+
 .discount-course {
   position: relative;
   height: 60.5rem;
   background-image: url(image/banner-discount-course.png);
   margin-top: 0;
 }
+
 .discount-course__content {
   width: 50%;
   margin-left: 50%;
@@ -303,25 +452,30 @@ body {
   font-weight: bolder;
   letter-spacing: 3px;
 }
+
 .discount-course__desc {
   padding-top: 3rem;
   font-size: 1.5rem;
   line-height: 3rem;
   padding-right: 14rem;
 }
+
 .discount-course-middle {
   position: absolute;
   left: 50%;
   top: 8%;
 }
+
 .gallery {
-  height: 95.6rem;
+  height: 85rem;
   position: relative;
   z-index: 0;
 }
-.gallery__inner{
-  position: relative;
+
+.gallery__inner {
+  padding-top: 5rem;
 }
+
 .gallery__title {
   line-height: 8rem;
   font-size: 6rem;
@@ -329,95 +483,114 @@ body {
   font-weight: bolder;
   letter-spacing: 5px;
   text-align: center;
-  margin-top: 5rem;
 }
+
 .gallery__desc {
   text-align: center;
   font-size: 1.6rem;
   padding: 2rem 10rem;
   line-height: 3rem;
 }
+
 .gallery__content {
   display: flex;
   justify-content: space-between;
   margin-top: 3rem;
+  position: absolute;
+  left: 10%;
+  right: 10%;
 }
+
 .gallery__item {
   width: 27%;
   box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   text-align: center;
+  background-color: white;
 }
+
 .gallery__title-small {
   font-size: 3rem;
   padding-top: 2rem;
   color: #484f5b;
   font-weight: bold;
 }
+
 .gallery__desc-small {
   font-size: 1.5rem;
   padding: 2rem;
   line-height: 2rem;
 }
+
 .gallery-left-top-1 {
   position: absolute;
   left: 0%;
   top: 0%;
   z-index: 0;
 }
+
 .gallery-left-top-2 {
   position: absolute;
   left: 0%;
   top: 0%;
 }
+
 .gallery-left-bottom-1 {
   position: absolute;
   left: 0%;
   bottom: -2%;
-  z-index: 10;
+  z-index: -1;
 }
+
 .gallery-left-bottom-2 {
   position: absolute;
   left: 0%;
   bottom: 0%;
-  z-index: 0;
+  z-index: -2;
 }
+
 .gallery-right-top-1 {
   position: absolute;
   right: 0%;
-  top: -8%;
+  top: -3%;
   z-index: 100;
 }
+
 .gallery-right-top-2 {
   position: absolute;
   right: 0%;
   top: 10%;
 }
+
 .gallery-right-top-3 {
   position: absolute;
   right: 0%;
-  top:-5.2%;
-  
+  top: 0%;
 }
+
 .gallery-right-bottom-1 {
   position: absolute;
-  right: 2%;
-  bottom: 19%;
+  right: 0%;
+  bottom: 0%;
   z-index: 0;
 }
+
 .gallery-right-bottom-2 {
   position: absolute;
-  right: 2%;
-  bottom: 19%;
+  right: 0%;
+  bottom: 0%;
   z-index: 0;
 }
+
 .yoga-training {
   height: 75rem;
   background-color: #e6c8c3;
 }
+
 .yoga-training__inner {
   display: flex;
   padding-top: 15rem;
 }
+
 .yoga-training__title {
   line-height: 6rem;
   font-size: 5rem;
@@ -426,40 +599,58 @@ body {
   letter-spacing: 2px;
   margin-top: 5rem;
 }
+
 .yoga-training__desc {
   font-size: 1.6rem;
   line-height: 3rem;
   padding-top: 3rem;
   padding-right: 1rem;
 }
+
 .yoga-training__image {
   width: 50%;
+  position: relative;
 }
+
+.play-button {
+  position: absolute;
+  left: 40%;
+  top: 34%;
+}
+
 .yoga-training__content {
   width: 50%;
 }
+
 .yoga-training__group-icon {
   display: flex;
   margin-top: 3rem;
 }
+
 .yoga-training__item-1 {
   padding: 1rem 1.5rem;
   background-color: #484f5b;
 }
+
 .yoga-training__item-2 {
   padding: 0.9rem;
   background-color: #484f5b;
   margin-left: 3rem;
 }
+
 .yoga-training__item-3 {
   padding: 1.1rem;
   background-color: #484f5b;
   margin-left: 3rem;
 }
+
 .form-message {
   padding-bottom: 5rem;
   position: relative;
+  height: 70rem;
+  padding-top: 5rem;
 }
+
 .fomr-message__title {
   line-height: 8rem;
   font-size: 5rem;
@@ -467,26 +658,32 @@ body {
   font-weight: bolder;
   letter-spacing: 2px;
   text-align: center;
-  margin-top: 5rem;
 }
+
 .form-message__desc {
   text-align: center;
   font-size: 1.6rem;
   padding: 2rem 10rem;
   line-height: 3rem;
 }
+
 .form-message__form {
   display: flex;
   flex-direction: column;
   text-align: center;
   align-items: center;
+  position: absolute;
+  width: 100%;
+  left: 0%;
 }
+
 .form-message-left-top-1 {
   position: absolute;
   left: 3%;
   top: 0%;
   z-index: 0;
 }
+
 .form-message-left-top-2 {
   position: absolute;
   left: 5%;
@@ -498,41 +695,47 @@ body {
   bottom: -2%;
   z-index: 10;
 }
+
 .form-message-left-bottom-2 {
   position: absolute;
   left: 0%;
   bottom: 0%;
   z-index: 0;
 }
+
 .form-message-right-top-1 {
   position: absolute;
   right: 0%;
-  top: -13%;
+  top: -4%;
   z-index: 100;
 }
+
 .form-message-right-top-2 {
   position: absolute;
   right: 0%;
-  top: 10%;
+  top: 19%;
 }
+
 .form-message-right-top-3 {
   position: absolute;
   right: 0%;
-  top:-8.4%;
-  
+  top: 0%;
 }
+
 .form-message-right-bottom-1 {
   position: absolute;
   right: 2%;
   bottom: 19%;
   z-index: 0;
 }
+
 .form-message-right-bottom-2 {
   position: absolute;
   right: 2%;
   bottom: 10%;
   z-index: 0;
 }
+
 input {
   width: 70%;
   border: #b0b0b0;
@@ -542,20 +745,23 @@ input {
   padding: 2rem 3rem;
   background-color: #efefef;
 }
+
 textarea {
   width: 70%;
   font-family: "PT Sans", sans-serif;
   font-size: 1.6rem;
   border: #b0b0b0;
   margin-top: 2rem;
-  color: #b0b0b0;
+  color: #948f8f;
   padding: 2rem 3rem;
   background-color: #efefef;
 }
+
 .footer {
   height: 32.4rem;
   background-color: #484f5b;
 }
+
 .footer__inner {
   display: flex;
   padding: 5rem 20rem;
@@ -563,49 +769,62 @@ textarea {
   line-height: 3rem;
   color: white;
 }
+
 .footer__address {
   width: 20%;
 }
+
 .footer__sitemap {
   width: 15%;
 }
+
 .footer__content-1 {
   width: 15%;
 }
+
 .footer__content-2 {
   width: 15%;
 }
+
 .footer__copy-right {
   width: 35%;
 }
+
 .footer__address {
   font-size: 1.5rem;
 }
+
 .footer__title {
   font-size: 3rem;
   padding-bottom: 3rem;
   font-weight: bold;
 }
+
 .footer__tilte-small {
   font-size: 2rem;
   font-weight: bold;
 }
+
 .footer__image {
   padding-bottom: 3rem;
 }
+
 .footer__social {
   display: flex;
   margin-top: 2rem;
 }
+
 .footer-fb {
   background: white;
   padding: 0.5rem;
 }
+
 .footer-tw {
   background: white;
   padding: 0.5rem;
   margin-left: 2rem;
 }
+
 .footer-insta {
   background: white;
   padding: 0.5rem;

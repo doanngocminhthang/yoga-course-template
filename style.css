@@ -61,6 +61,109 @@ body {
   padding-right: 8.2rem;
 }
 
+.header a:hover {
+  color: #e6c8c3;
+}
+
+.header__icon {
+  display: none;
+  text-decoration: none;
+  color: #101010;
+}
+
+.fa-bars {
+  display: none;
+  font-size: 2.4rem;
+}
+
+.header-mobile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  display: none;
+}
+
+.nav__overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  animation: fadeIn linear 0.4s;
+}
+
+.nav__mobile {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 320px;
+  background-color: #fff;
+  transform: translateX(100%);
+  transition: transform linear 0.4s;
+}
+
+.nav__mobile-list {
+  margin-top: 24px;
+}
+
+.nav__mobile-link {
+  text-decoration: none;
+  color: #333;
+  display: block;
+  padding: 8px 0;
+  font-size: 1.4rem;
+}
+
+.nav__input {
+  display: none;
+}
+
+.nav__mobile-close {
+  font-size: 1.4rem;
+  color: #666;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
+
+.nav__input:checked ~ .nav__overlay {
+  display: block;
+}
+
+.nav__input:checked ~ .nav__mobile {
+  transform: translateX(0%);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .header__inner {
+    display: none;
+  }
+
+  .header-mobile {
+    display: flex;
+  }
+}
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #101010;
+}
+
 .banner {
   position: relative;
   margin-top: 3rem;
@@ -370,13 +473,13 @@ body {
 }
 
 .gallery {
-  height: 95.6rem;
+  height: 85rem;
   position: relative;
   z-index: 0;
 }
 
 .gallery__inner {
-  position: relative;
+  padding-top: 5rem;
 }
 
 .gallery__title {
@@ -386,7 +489,6 @@ body {
   font-weight: bolder;
   letter-spacing: 5px;
   text-align: center;
-  margin-top: 5rem;
 }
 
 .gallery__desc {
@@ -400,12 +502,16 @@ body {
   display: flex;
   justify-content: space-between;
   margin-top: 3rem;
+  position: absolute;
+  left: 10%;
+  right: 10%;
 }
 
 .gallery__item {
   width: 27%;
   box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   text-align: center;
+  background-color: white;
 }
 
 .gallery__title-small {
@@ -438,20 +544,20 @@ body {
   position: absolute;
   left: 0%;
   bottom: -2%;
-  z-index: 10;
+  z-index: -1;
 }
 
 .gallery-left-bottom-2 {
   position: absolute;
   left: 0%;
   bottom: 0%;
-  z-index: 0;
+  z-index: -2;
 }
 
 .gallery-right-top-1 {
   position: absolute;
   right: 0%;
-  top: -8%;
+  top: -3%;
   z-index: 100;
 }
 
@@ -464,20 +570,20 @@ body {
 .gallery-right-top-3 {
   position: absolute;
   right: 0%;
-  top: -5.2%;
+  top: 0%;
 }
 
 .gallery-right-bottom-1 {
   position: absolute;
-  right: 2%;
-  bottom: 19%;
+  right: 0%;
+  bottom: 0%;
   z-index: 0;
 }
 
 .gallery-right-bottom-2 {
   position: absolute;
-  right: 2%;
-  bottom: 19%;
+  right: 0%;
+  bottom: 0%;
   z-index: 0;
 }
 
@@ -509,6 +615,13 @@ body {
 
 .yoga-training__image {
   width: 50%;
+  position: relative;
+}
+
+.play-button {
+  position: absolute;
+  left: 40%;
+  top: 34%;
 }
 
 .yoga-training__content {
@@ -540,6 +653,8 @@ body {
 .form-message {
   padding-bottom: 5rem;
   position: relative;
+  height: 70rem;
+  padding-top: 5rem;
 }
 
 .fomr-message__title {
@@ -549,7 +664,6 @@ body {
   font-weight: bolder;
   letter-spacing: 2px;
   text-align: center;
-  margin-top: 5rem;
 }
 
 .form-message__desc {
@@ -564,6 +678,9 @@ body {
   flex-direction: column;
   text-align: center;
   align-items: center;
+  position: absolute;
+  width: 100%;
+  left: 0%;
 }
 
 .form-message-left-top-1 {
@@ -596,20 +713,20 @@ body {
 .form-message-right-top-1 {
   position: absolute;
   right: 0%;
-  top: -13%;
+  top: -4%;
   z-index: 100;
 }
 
 .form-message-right-top-2 {
   position: absolute;
   right: 0%;
-  top: 10%;
+  top: 19%;
 }
 
 .form-message-right-top-3 {
   position: absolute;
   right: 0%;
-  top: -8.4%;
+  top: 0%;
 }
 
 .form-message-right-bottom-1 {
@@ -642,7 +759,7 @@ textarea {
   font-size: 1.6rem;
   border: #b0b0b0;
   margin-top: 2rem;
-  color: #b0b0b0;
+  color: #948f8f;
   padding: 2rem 3rem;
   background-color: #efefef;
 }
