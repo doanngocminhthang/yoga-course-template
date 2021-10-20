@@ -17,7 +17,7 @@
 
     <!-- HEADER -->
     <!-- NAV PC -->
-    <div class="wrapper">
+    <div class="wrapper ">
         <div class="header">
 
             <!-- NAV PC -->
@@ -32,25 +32,25 @@
                 <div class="header__menu">
                     <ul class="header__menu-list">
                         <li class="header__menu-item">
-                            <a href="" class="header__menu-link">Home</a>
+                            <a href="" class="header__menu-link cool-link">Home</a>
                         </li>
                         <li class="header__menu-item">
-                            <a href="" class="header__menu-link">About</a>
+                            <a href="" class="header__menu-link cool-link">About</a>
                         </li>
                         <li class="header__menu-item">
-                            <a href="" class="header__menu-link">Blog</a>
+                            <a href="" class="header__menu-link cool-link">Blog</a>
                         </li>
                         <li class="header__menu-item">
-                            <a href="" class="header__menu-link">Training</a>
+                            <a href="" class="header__menu-link cool-link">Training</a>
                         </li>
                         <li class="header__menu-item">
-                            <a href="" class="header__menu-link">Event</a>
+                            <a href="" class="header__menu-link cool-link">Event</a>
                         </li>
                         <li class="header__menu-item">
-                            <a href="" class="header__menu-link">Shop</a>
+                            <a href="" class="header__menu-link cool-link">Shop</a>
                         </li>
                         <li class="header__menu-item" style="padding-right:0">
-                            <a href="" class="header__menu-link">Contact</a>
+                            <a href="" class="header__menu-link cool-link">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -78,25 +78,25 @@
                     </label>
                     <ul class="nav__mobile-list">
                         <li class="">
-                            <a href="" class="nav__mobile-link">Home</a>
+                            <a href="" class="nav__mobile-link cool-link">Home</a>
                         </li>
                         <li class="">
-                            <a href="" class="nav__mobile-link">About</a>
+                            <a href="" class="nav__mobile-link cool-link">About</a>
                         </li>
                         <li class="">
-                            <a href="" class="nav__mobile-link">Blog</a>
+                            <a href="" class="nav__mobile-link cool-link">Blog</a>
                         </li>
                         <li class="">
-                            <a href="" class="nav__mobile-link">Training</a>
+                            <a href="" class="nav__mobile-link cool-link">Training</a>
                         </li>
                         <li class="">
-                            <a href="" class="nav__mobile-link">Event</a>
+                            <a href="" class="nav__mobile-link cool-link">Event</a>
                         </li>
                         <li class="">
-                            <a href="" class="nav__mobile-link">Shop</a>
+                            <a href="" class="nav__mobile-link cool-link">Shop</a>
                         </li>
                         <li class="" style="padding-right:0">
-                            <a href="" class="nav__mobile-link">Contact</a>
+                            <a href="" class="nav__mobile-link cool-link">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -104,13 +104,9 @@
         </div>
     </div>
 
-
-
-
-
-
-
-
+    <div class=" wrapper image">
+        <img id="img" src="/image/image1.jpg" onclick="changeImage()" alt="">
+    </div>
 
     <div class="banner wrapper">
         <img class="banner__right-bottom-1" src="image/banner__right-bottom-1.png" alt="">
@@ -259,7 +255,7 @@
         <div class="yoga-training__inner container">
             <div class="yoga-training__image">
                 <img class="play-button" src="image/yoga-training-play-button.png" alt="">
-                <img src="image/training-video.png" alt="">
+                <img class="training-video" src="image/training-video.png" alt="">
             </div>
             <div class="yoga-training__content">
                 <h2 class="yoga-training__title">Yoga Training<br>Video Showreel</h2>
@@ -348,14 +344,33 @@
         </div>
     </div>
 
-
+    <a href="#" class="to-top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
 
 
 
     <script>
-        function myFunction() {
-            var x = document.getElementById("")
+        var index = 0;
+        changeImage = function () {
+            var imgs = ["/image/image1.jpg", "/image/image2.jpg", "/image/image3.jpg"];
+            document.getElementById('img').src = imgs[index];
+            index++;
+            if (index == 3) {
+                index = 0;
+            }
         }
+        setInterval(changeImage, 1000)
+
+        const toTop = document.querySelector(".to-top");
+
+        window.addEventListener("scroll", () => {
+            if (window.pageYOffset > 100) {
+                toTop.classList.add("active");
+            } else {
+                toTop.classList.remove("active");
+            }
+        })
     </script>
 </body>
 

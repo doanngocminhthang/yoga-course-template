@@ -55,10 +55,25 @@ body {
   list-style-type: none;
   text-decoration: none;
   color: black;
+  display: inline-block;
 }
 
 .header__menu-item {
   padding-right: 8.2rem;
+}
+
+.cool-link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #e6c8c3;
+  transition: width 0.3s;
+}
+
+.cool-link:hover::after {
+  width: 100%;
+  transition: width 0.3s;
 }
 
 .header a:hover {
@@ -81,6 +96,7 @@ body {
   justify-content: space-between;
   align-items: center;
   display: none;
+  padding: 0 2rem;
 }
 
 .nav__overlay {
@@ -92,6 +108,7 @@ body {
   left: 0;
   background-color: rgba(0, 0, 0, 0.3);
   animation: fadeIn linear 0.4s;
+  z-index: 998;
 }
 
 .nav__mobile {
@@ -103,18 +120,23 @@ body {
   background-color: #fff;
   transform: translateX(100%);
   transition: transform linear 0.4s;
+  z-index: 999;
 }
 
 .nav__mobile-list {
   margin-top: 24px;
+  text-align: center;
 }
 
 .nav__mobile-link {
   text-decoration: none;
-  color: #333;
+  color: #e6c8c3;
   display: block;
   padding: 8px 0;
-  font-size: 1.4rem;
+  font-size: 3.4rem;
+  padding-bottom: 6rem;
+  width: 30%;
+  margin-left: 40%;
 }
 
 .nav__input {
@@ -293,6 +315,28 @@ body {
   top: 25%;
 }
 
+@media (max-width: 1024px) {
+  .banner__inner {
+    flex-direction: column;
+  }
+
+  .banner__col-1 {
+    width: 100%;
+  }
+
+  .banner__col-2 {
+    width: 100%;
+    padding-top: 5rem;
+  }
+
+  .banner__desc {
+    padding-right: 2rem;
+  }
+
+  .banner-2__content {
+    width: 100%;
+  }
+}
 .program__inner {
   display: flex;
   width: 100%;
@@ -333,6 +377,33 @@ body {
   padding-top: 6px;
 }
 
+@media (max-width: 1024px) {
+  .program {
+    height: 850px;
+  }
+
+  .program__inner {
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    height: 850px;
+  }
+
+  .program__content {
+    width: 100%;
+    padding: 1rem;
+    padding-top: 50px;
+  }
+
+  .program__content > img {
+    margin: 0 auto;
+  }
+
+  .bg-program-1__image, .bg-program-2__image, .bg-program-3__image {
+    left: 40%;
+  }
+}
 .yoga-breathing {
   height: 85rem;
   position: relative;
@@ -437,6 +508,25 @@ body {
   z-index: 500;
 }
 
+@media (max-width: 1024px) {
+  .yoga-breathing {
+    height: 1050px;
+  }
+
+  .yoga-breathing__inner {
+    flex-direction: column;
+    height: 900px;
+    padding: 5rem;
+  }
+
+  .yoga-breathing__content {
+    width: 100%;
+  }
+
+  .yoga-breathing__image {
+    width: 100%;
+  }
+}
 .discount-course {
   position: relative;
   height: 60.5rem;
@@ -472,6 +562,30 @@ body {
   top: 8%;
 }
 
+@media (max-width: 1024px) {
+  .discount-course__content {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .discount-course-middle {
+    left: 0%;
+  }
+
+  .discount-course__desc {
+    padding: 2rem;
+  }
+}
+@media (max-width: 508px) {
+  .discount-course__title {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+
+  .banner__btn {
+    margin-top: 1rem;
+  }
+}
 .gallery {
   height: 85rem;
   position: relative;
@@ -587,6 +701,35 @@ body {
   z-index: 0;
 }
 
+@media (max-width: 1024px) {
+  .gallery {
+    height: 1800px;
+  }
+
+  .gallery__content {
+    display: block;
+  }
+
+  .gallery__item {
+    width: 100%;
+  }
+
+  .gallery__image {
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .gallery__image > img {
+    height: 300px;
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .gallery__desc {
+    padding: 2rem;
+  }
+}
 .yoga-training {
   height: 75rem;
   background-color: #e6c8c3;
@@ -650,6 +793,38 @@ body {
   margin-left: 3rem;
 }
 
+@media (max-width: 1024px) {
+  .yoga-training {
+    height: 750px;
+  }
+
+  .yoga-training__inner {
+    flex-direction: column;
+    height: 2px;
+    padding: 3rem 2rem;
+  }
+
+  .yoga-training__image {
+    width: 100%;
+  }
+
+  .play-button {
+    left: 23%;
+  }
+
+  .training-video {
+    height: 300px;
+  }
+
+  .yoga-training__content {
+    width: 100%;
+    height: 50%;
+  }
+
+  .yoga-training__title {
+    margin-top: 0;
+  }
+}
 .form-message {
   padding-bottom: 5rem;
   position: relative;
@@ -836,6 +1011,40 @@ textarea {
   background: white;
   padding: 0.5rem;
   margin-left: 2rem;
+}
+
+.image {
+  margin-top: 10px;
+}
+
+.image img {
+  width: 100%;
+  height: 700px;
+}
+
+.to-top {
+  background: white;
+  position: fixed;
+  bottom: 16px;
+  right: 32px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  color: #1f1f1f;
+  text-decoration: none;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s;
+}
+
+.to-top.active {
+  bottom: 32px;
+  pointer-events: auto;
+  opacity: 1;
 }
 
 /*# sourceMappingURL=style.css.map */
