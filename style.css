@@ -16,6 +16,7 @@ img {
 
 body {
   font-family: "PT Sans", sans-serif;
+  color: #484f5b;
 }
 
 .wrapper {
@@ -34,32 +35,39 @@ body {
   padding-top: 4rem;
   justify-content: space-between;
 }
-
-.header__inner {
+.header-inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
-.logo {
+.header-logo {
   width: 9.2rem;
   height: 8rem;
 }
-
-.header__menu-list {
+.header-menu-list {
   display: flex;
   font-size: 2.1rem;
 }
-
-.header__menu-link {
+.header-menu-link {
   list-style-type: none;
   text-decoration: none;
-  color: black;
+  color: #484f5b;
   display: inline-block;
 }
-
-.header__menu-item {
+.header-menu-item {
   padding-right: 8.2rem;
+}
+.header-icon {
+  display: none;
+  text-decoration: none;
+  color: #101010;
+}
+.header-mobile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  display: none;
+  padding: 0 2rem;
 }
 
 .cool-link::after {
@@ -80,26 +88,12 @@ body {
   color: #e6c8c3;
 }
 
-.header__icon {
-  display: none;
-  text-decoration: none;
-  color: #101010;
-}
-
 .fa-bars {
   display: none;
   font-size: 2.4rem;
 }
 
-.header-mobile {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  display: none;
-  padding: 0 2rem;
-}
-
-.nav__overlay {
+.nav-overlay {
   display: none;
   position: fixed;
   top: 0;
@@ -110,8 +104,7 @@ body {
   animation: fadeIn linear 0.4s;
   z-index: 998;
 }
-
-.nav__mobile {
+.nav-mobile {
   position: fixed;
   top: 0;
   right: 0;
@@ -122,13 +115,11 @@ body {
   transition: transform linear 0.4s;
   z-index: 999;
 }
-
-.nav__mobile-list {
+.nav-mobile-list {
   margin-top: 24px;
   text-align: center;
 }
-
-.nav__mobile-link {
+.nav-mobile-link {
   text-decoration: none;
   color: #e6c8c3;
   display: block;
@@ -138,24 +129,20 @@ body {
   width: 30%;
   margin-left: 40%;
 }
-
-.nav__input {
+.nav-input {
   display: none;
 }
-
-.nav__mobile-close {
+.nav-mobile-close {
   font-size: 1.4rem;
   color: #666;
   position: absolute;
   right: 1rem;
   top: 1rem;
 }
-
-.nav__input:checked ~ .nav__overlay {
+.nav-input:checked ~ .nav-overlay {
   display: block;
 }
-
-.nav__input:checked ~ .nav__mobile {
+.nav-input:checked ~ .nav-mobile {
   transform: translateX(0%);
 }
 
@@ -168,7 +155,7 @@ body {
   }
 }
 @media screen and (max-width: 1024px) {
-  .header__inner {
+  .header-inner {
     display: none;
   }
 
@@ -190,39 +177,33 @@ body {
   position: relative;
   margin-top: 3rem;
 }
-
-.banner__inner {
+.banner-inner {
   display: flex;
 }
-
-.banner__col-1 {
+.banner-col-1 {
   width: 50%;
 }
-
-.banner__col-2 {
+.banner-col-2 {
   width: 50%;
   padding: 5rem;
   padding-top: 15rem;
   left: 50%;
   top: 20%;
 }
-
-.banner__title {
+.banner-title {
   line-height: 8rem;
   font-size: 8rem;
   color: #484f5b;
   font-weight: bolder;
   letter-spacing: 5px;
 }
-
-.banner__desc {
+.banner-desc {
   padding-top: 3rem;
   font-size: 2rem;
   line-height: 3rem;
   padding-right: 14rem;
 }
-
-.banner__btn {
+.banner-btn {
   margin-top: 5rem;
   padding: 1rem 3rem;
   background-color: #e6c8c3;
@@ -232,82 +213,69 @@ body {
   font-weight: bolder;
   border: none;
 }
-
-.banner__right-bottom-1 {
+.banner-right-bottom-1 {
   position: absolute;
   right: 0%;
   bottom: 0%;
 }
-
-.banner__right-bottom-2 {
+.banner-right-bottom-2 {
   position: absolute;
   right: 0%;
   bottom: 0%;
 }
-
-.banner__right-bottom-3 {
+.banner-right-bottom-3 {
   position: absolute;
   right: 0%;
   bottom: 3%;
 }
-
-.banner__left-middle-1 {
+.banner-left-middle-1 {
   position: absolute;
   left: 16%;
   bottom: 18%;
 }
-
-.banner__left-middle-2 {
+.banner-left-middle-2 {
   position: absolute;
   left: 11%;
   bottom: 50%;
 }
-
-.banner__right-top-1 {
+.banner-right-top-1 {
   position: absolute;
   right: 2%;
   top: 0%;
   z-index: 2;
 }
-
-.banner__right-top-2 {
+.banner-right-top-2 {
   position: absolute;
   right: 7%;
   top: 0%;
   z-index: 1;
 }
-
-.banner__right-top-3 {
+.banner-right-top-3 {
   position: absolute;
   right: 0%;
   top: 0%;
   z-index: 0;
 }
-
-.banner__left-top-1 {
+.banner-left-top-1 {
   position: absolute;
   left: 0%;
   top: 0%;
   z-index: 0;
 }
-
-.banner__left-top-2 {
+.banner-left-top-2 {
   position: absolute;
   left: 0%;
   top: 0%;
   z-index: 1;
 }
-
 .banner-2 {
   position: relative;
 }
-
-.banner-2__inner {
-  background-image: url(image/banner2.png);
+.banner-2-inner {
+  background-image: url(images/banner2.png);
   height: 80rem;
 }
-
-.banner-2__content {
+.banner-2-content {
   width: 60%;
   padding: 5rem;
   padding-top: 15rem;
@@ -316,91 +284,79 @@ body {
 }
 
 @media (max-width: 1024px) {
-  .banner__inner {
+  .banner-inner {
     flex-direction: column;
   }
-
-  .banner__col-1 {
+  .banner-col-1 {
     width: 100%;
   }
-
-  .banner__col-2 {
+  .banner-col-2 {
     width: 100%;
     padding-top: 5rem;
   }
-
-  .banner__desc {
+  .banner-desc {
     padding-right: 2rem;
   }
-
-  .banner-2__content {
+  .banner-2-content {
     width: 100%;
   }
 }
-.program__inner {
+.program-inner {
   display: flex;
   width: 100%;
   align-items: baseline;
   height: 47rem;
   padding-top: 6rem;
 }
-
-.program__content {
+.program-content {
   width: 33.333333%;
   padding: 5rem;
   padding-left: 14rem;
   position: relative;
   text-align: center;
 }
-
-.bg-program-1__image {
-  position: absolute;
-}
-
-.bg-program-2__image {
-  position: absolute;
-}
-
-.bg-program-3__image {
-  position: absolute;
-}
-
-.program__title {
+.program-title {
   font-size: 3rem;
   font-weight: bold;
   letter-spacing: 1px;
   padding-top: 3rem;
 }
-
-.program__desc {
+.program-desc {
   font-size: 1.8rem;
   padding-top: 6px;
+}
+
+.bg-program-1-image {
+  position: absolute;
+}
+.bg-program-2-image {
+  position: absolute;
+}
+.bg-program-3-image {
+  position: absolute;
 }
 
 @media (max-width: 1024px) {
   .program {
     height: 850px;
   }
-
-  .program__inner {
+  .program-inner {
     flex-direction: column;
     width: 100%;
     padding: 1rem;
     text-align: center;
     height: 850px;
   }
-
-  .program__content {
+  .program-content {
     width: 100%;
     padding: 1rem;
     padding-top: 50px;
   }
-
-  .program__content > img {
+  .program-content > img {
     margin: 0 auto;
   }
 
-  .bg-program-1__image, .bg-program-2__image, .bg-program-3__image {
+  .bg-program-1-image, .bg-program-2-image, .bg-program-3-image {
     left: 40%;
   }
 }
@@ -408,99 +364,83 @@ body {
   height: 85rem;
   position: relative;
 }
-
-.yoga-breathing__inner {
+.yoga-breathing-inner {
   display: flex;
   padding: 20rem 0rem;
 }
-
-.yoga-breathing__content {
+.yoga-breathing-content {
   width: 50%;
   padding: 2rem;
 }
-
-.yoga-breathing__image {
+.yoga-breathing-image {
   width: 50%;
   padding: 3rem;
   z-index: 50;
 }
-
 .yoga-breathing-wrapper-left-top-corner-1 {
   position: absolute;
   left: 0%;
   top: 0%;
   z-index: 0;
 }
-
 .yoga-breathing-wrapper-left-top-corner-2 {
   position: absolute;
   left: 0%;
   top: 0%;
 }
-
 .yoga-breathing-wrapper-left-bottom-corner-1 {
   position: absolute;
   left: 1%;
   bottom: 9%;
 }
-
 .yoga-breathing-wrapper-left-bottom-corner-2 {
   position: absolute;
   left: 0%;
   bottom: 0%;
   z-index: 10;
 }
-
 .yoga-breathing-left-top-corner-1 {
   position: absolute;
   left: 47%;
   top: 19%;
 }
-
 .yoga-breathing-left-top-corner-2 {
   position: absolute;
   left: 47%;
   top: 19%;
 }
-
 .yoga-breathing-left-top-corner-1 {
   position: absolute;
   left: 47%;
   top: 19%;
 }
-
 .yoga-breathing-left-top-corner-2 {
   position: absolute;
   left: 47%;
   top: 19%;
 }
-
 .yoga-breathing-left-bottom-corner {
   position: absolute;
   left: 50%;
   bottom: 19%;
   z-index: 200;
 }
-
 .yoga-breathing-right-top-corner-1 {
   position: absolute;
   right: 3%;
   top: 19%;
 }
-
 .yoga-breathing-right-top-corner-2 {
   position: absolute;
   right: 2%;
   top: 19%;
 }
-
 .yoga-breathing-right-bottom-corner-1 {
   position: absolute;
   right: 2%;
   bottom: 19%;
   z-index: 500;
 }
-
 .yoga-breathing-right-bottom-corner-2 {
   position: absolute;
   right: 2%;
@@ -512,36 +452,33 @@ body {
   .yoga-breathing {
     height: 1050px;
   }
-
-  .yoga-breathing__inner {
+  .yoga-breathing-inner {
     flex-direction: column;
     height: 900px;
     padding: 5rem;
   }
-
-  .yoga-breathing__content {
+  .yoga-breathing-content {
     width: 100%;
   }
-
-  .yoga-breathing__image {
+  .yoga-breathing-image {
     width: 100%;
   }
 }
 .discount-course {
   position: relative;
   height: 60.5rem;
-  background-image: url(image/banner-discount-course.png);
+  background-image: url(images/banner-discount-course.png);
   margin-top: 0;
 }
 
-.discount-course__content {
+.discount-course-content {
   width: 50%;
   margin-left: 50%;
   padding: 3rem;
   padding-top: 7rem;
 }
 
-.discount-course__title {
+.discount-course-title {
   line-height: 8rem;
   font-size: 7rem;
   color: #484f5b;
@@ -549,7 +486,7 @@ body {
   letter-spacing: 3px;
 }
 
-.discount-course__desc {
+.discount-course-desc {
   padding-top: 3rem;
   font-size: 1.5rem;
   line-height: 3rem;
@@ -563,7 +500,7 @@ body {
 }
 
 @media (max-width: 1024px) {
-  .discount-course__content {
+  .discount-course-content {
     width: 100%;
     margin-left: 0;
   }
@@ -572,17 +509,17 @@ body {
     left: 0%;
   }
 
-  .discount-course__desc {
+  .discount-course-desc {
     padding: 2rem;
   }
 }
 @media (max-width: 508px) {
-  .discount-course__title {
+  .discount-course-title {
     font-size: 4rem;
     line-height: 4rem;
   }
 
-  .banner__btn {
+  .banner-btn {
     margin-top: 1rem;
   }
 }
@@ -592,11 +529,11 @@ body {
   z-index: 0;
 }
 
-.gallery__inner {
+.gallery-inner {
   padding-top: 5rem;
 }
 
-.gallery__title {
+.gallery-title {
   line-height: 8rem;
   font-size: 6rem;
   color: #484f5b;
@@ -605,14 +542,14 @@ body {
   text-align: center;
 }
 
-.gallery__desc {
+.gallery-desc {
   text-align: center;
   font-size: 1.6rem;
   padding: 2rem 10rem;
   line-height: 3rem;
 }
 
-.gallery__content {
+.gallery-content {
   display: flex;
   justify-content: space-between;
   margin-top: 3rem;
@@ -621,21 +558,21 @@ body {
   right: 10%;
 }
 
-.gallery__item {
+.gallery-item {
   width: 27%;
   box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   text-align: center;
   background-color: white;
 }
 
-.gallery__title-small {
+.gallery-title-small {
   font-size: 3rem;
   padding-top: 2rem;
   color: #484f5b;
   font-weight: bold;
 }
 
-.gallery__desc-small {
+.gallery-desc-small {
   font-size: 1.5rem;
   padding: 2rem;
   line-height: 2rem;
@@ -706,27 +643,27 @@ body {
     height: 1800px;
   }
 
-  .gallery__content {
+  .gallery-content {
     display: block;
   }
 
-  .gallery__item {
+  .gallery-item {
     width: 100%;
   }
 
-  .gallery__image {
+  .gallery-image {
     text-align: center;
     justify-content: center;
     margin-top: 20px;
   }
 
-  .gallery__image > img {
+  .gallery-image > img {
     height: 300px;
     width: 50%;
     margin: 0 auto;
   }
 
-  .gallery__desc {
+  .gallery-desc {
     padding: 2rem;
   }
 }
@@ -735,12 +672,12 @@ body {
   background-color: #e6c8c3;
 }
 
-.yoga-training__inner {
+.yoga-training-inner {
   display: flex;
   padding-top: 15rem;
 }
 
-.yoga-training__title {
+.yoga-training-title {
   line-height: 6rem;
   font-size: 5rem;
   color: #484f5b;
@@ -749,14 +686,14 @@ body {
   margin-top: 5rem;
 }
 
-.yoga-training__desc {
+.yoga-training-desc {
   font-size: 1.6rem;
   line-height: 3rem;
   padding-top: 3rem;
   padding-right: 1rem;
 }
 
-.yoga-training__image {
+.yoga-training-image {
   width: 50%;
   position: relative;
 }
@@ -767,27 +704,27 @@ body {
   top: 34%;
 }
 
-.yoga-training__content {
+.yoga-training-content {
   width: 50%;
 }
 
-.yoga-training__group-icon {
+.yoga-training-group-icon {
   display: flex;
   margin-top: 3rem;
 }
 
-.yoga-training__item-1 {
+.yoga-training-item-1 {
   padding: 1rem 1.5rem;
   background-color: #484f5b;
 }
 
-.yoga-training__item-2 {
+.yoga-training-item-2 {
   padding: 0.9rem;
   background-color: #484f5b;
   margin-left: 3rem;
 }
 
-.yoga-training__item-3 {
+.yoga-training-item-3 {
   padding: 1.1rem;
   background-color: #484f5b;
   margin-left: 3rem;
@@ -798,13 +735,13 @@ body {
     height: 750px;
   }
 
-  .yoga-training__inner {
+  .yoga-training-inner {
     flex-direction: column;
     height: 2px;
     padding: 3rem 2rem;
   }
 
-  .yoga-training__image {
+  .yoga-training-image {
     width: 100%;
   }
 
@@ -816,12 +753,12 @@ body {
     height: 300px;
   }
 
-  .yoga-training__content {
+  .yoga-training-content {
     width: 100%;
     height: 50%;
   }
 
-  .yoga-training__title {
+  .yoga-training-title {
     margin-top: 0;
   }
 }
@@ -832,7 +769,7 @@ body {
   padding-top: 5rem;
 }
 
-.fomr-message__title {
+.fomr-message-title {
   line-height: 8rem;
   font-size: 5rem;
   color: #484f5b;
@@ -841,14 +778,14 @@ body {
   text-align: center;
 }
 
-.form-message__desc {
+.form-message-desc {
   text-align: center;
   font-size: 1.6rem;
   padding: 2rem 10rem;
   line-height: 3rem;
 }
 
-.form-message__form {
+.form-message-form {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -944,7 +881,7 @@ textarea {
   background-color: #484f5b;
 }
 
-.footer__inner {
+.footer-inner {
   display: flex;
   padding: 5rem 20rem;
   font-size: 1.5rem;
@@ -952,46 +889,46 @@ textarea {
   color: white;
 }
 
-.footer__address {
+.footer-address {
   width: 20%;
 }
 
-.footer__sitemap {
+.footer-sitemap {
   width: 15%;
 }
 
-.footer__content-1 {
+.footer-content-1 {
   width: 15%;
 }
 
-.footer__content-2 {
+.footer-content-2 {
   width: 15%;
 }
 
-.footer__copy-right {
+.footer-copy-right {
   width: 35%;
 }
 
-.footer__address {
+.footer-address {
   font-size: 1.5rem;
 }
 
-.footer__title {
+.footer-title {
   font-size: 3rem;
   padding-bottom: 3rem;
   font-weight: bold;
 }
 
-.footer__tilte-small {
+.footer-tilte-small {
   font-size: 2rem;
   font-weight: bold;
 }
 
-.footer__image {
+.footer-image {
   padding-bottom: 3rem;
 }
 
-.footer__social {
+.footer-social {
   display: flex;
   margin-top: 2rem;
 }
@@ -1045,6 +982,10 @@ textarea {
   bottom: 32px;
   pointer-events: auto;
   opacity: 1;
+}
+
+.pub {
+  height: 1000px;
 }
 
 /*# sourceMappingURL=style.css.map */
