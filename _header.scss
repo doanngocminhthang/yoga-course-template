@@ -1,0 +1,133 @@
+@import "variables";
+.header {
+    padding-top: 4rem;
+    justify-content: space-between;
+     a:hover {
+      color: $secondary-color;
+    }
+    &-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &-logo {
+      width: 9.2rem;
+      height: 8rem;
+    }
+    &-menu-list {
+      display: flex;
+      font-size: 2.1rem;
+    }
+    &-menu-link {
+      list-style-type: none;
+      text-decoration: none;
+      color: $secondary-color;
+      display: inline-block;
+    }
+    &-menu-item {
+      padding-right: 8.2rem;
+      .cool-link::after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 2px;
+        background: #e6c8c3;
+        transition: width 0.3s;
+      }
+      
+      .cool-link:hover::after {
+        width: 100%;
+        transition: width 0.3s;
+      }
+    }
+    &-icon {
+      display: none;
+      text-decoration: none;
+      color: $third-color;
+    }
+    &-mobile {
+      display: none;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 2rem;
+      label{
+        i{font-size: 2.4rem;}
+      }
+      .nav {
+        &-overlay {
+          display: none;
+          position: fixed;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-color: rgba(0, 0, 0, 0.3);
+          animation: fadeIn linear 0.4s;
+          z-index: 998;
+        }
+        &-mobile {
+          position: fixed;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          width: 320px;
+          background-color: $fourth-color;
+          transform: translateX(100%);
+          transition: transform linear 0.4s;
+          z-index: 999;
+          
+        }
+        &-mobile-list {
+          margin-top: 24px;
+          text-align: center;
+        }
+        &-mobile-link {
+          text-decoration: none;
+          color: $primary-color;
+          display: block;
+          padding: 8px 0;
+          font-size: 3.4rem;
+          padding-bottom: 6rem;
+          width: 30%;
+          margin-left: 40%;
+        }
+        &-input {
+          display: none;
+        }
+        &-mobile-close {
+          font-size: 1.4rem;
+          color: $fifth-color ;
+          position: absolute;
+          right: 1rem;
+          top: 1rem;
+        }
+        &-input:checked ~ .nav-overlay {
+          display: block;
+        }
+      
+        &-input:checked ~ .nav-mobile {
+          transform: translateX(0%);
+        }
+      }
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+@media screen and (max-width: 1024px) {
+  .header{
+    &-inner{
+      display: none;
+    }
+    &-mobile{
+      display: flex;
+    }
+  }
+}

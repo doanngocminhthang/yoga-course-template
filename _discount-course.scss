@@ -1,0 +1,58 @@
+@import "variables";
+
+//discount course section
+.discount-course {
+  position: relative;
+  height: 60.5rem;
+  background-image: url(images/banner-discount-course.png);
+  margin-top: 0;
+  &-content {
+    width: 50%;
+    margin-left: 50%;
+    padding: 3rem;
+    padding-top: 7rem;
+  }
+  &-title {
+    line-height: 8rem;
+    font-size: 7rem;
+    color: #484f5b;
+    font-weight: bolder;
+    letter-spacing: 3px;
+  }
+  &-desc {
+    padding-top: 3rem;
+    font-size: 1.5rem;
+    line-height: 3rem;
+    padding-right: 14rem;
+  }
+  &-middle {
+    position: absolute;
+    left: 50%;
+    top: 8%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .discount-course {
+    &-content {
+      width: 100%;
+      margin-left: 0;
+    }
+    &-middle {
+      left: 0%;
+    }
+    &-desc {
+      padding: 2rem;
+    }
+  }
+}
+
+@media (max-width: 508px) {
+  .discount-course-title {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+  .banner-btn {
+    margin-top: 1rem;
+  }
+}

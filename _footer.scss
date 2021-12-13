@@ -1,0 +1,73 @@
+@import "variables";
+.footer {
+    height: 32.4rem;
+    background-color: $secondary-color;
+    &-inner {
+      display: flex;
+      padding: 5rem 20rem;
+      font-size: 1.5rem;
+      line-height: 3rem;
+      color: $fourth-color;
+    }
+    
+    &-address {
+      width: 20%;
+    }
+    
+    &-sitemap {
+      width: 15%;
+    }
+    
+    &-content-1 {
+      width: 15%;
+    }
+    
+    &-content-2 {
+      width: 15%;
+    }
+    
+    &-copy-right {
+      width: 35%;
+    }
+    
+    &-address {
+      font-size: 1.5rem;
+    }
+    
+    &-title {
+      font-size: 3rem;
+      padding-bottom: 3rem;
+      font-weight: bold;
+    }
+    
+    &-tilte-small {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+    
+    &-image {
+      padding-bottom: 3rem;
+    }
+    
+    &-social {
+      display: flex;
+      margin-top: 2rem;
+    }
+    
+    &-fb {
+      background: white;
+      padding: 0.5rem;
+    }
+    
+    &-tw {
+      background: white;
+      padding: 0.5rem;
+      margin-left: 2rem;
+    }
+  
+    &-insta {
+      background: white;
+      padding: 0.5rem;
+      margin-left: 2rem;
+    }
+  }

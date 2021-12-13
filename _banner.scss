@@ -1,0 +1,133 @@
+@import "variables";
+.banner {
+    position: relative;
+    margin-top: 3rem;
+    &-inner {
+      display: flex;
+    }
+    &-col-1 {
+      width: 50%;
+    }
+    &-col-2 {
+      width: 50%;
+      padding: 5rem;
+      padding-top: 15rem;
+      // position: absolute;
+      left: 50%;
+      top: 20%;
+    }
+    &-title {
+      line-height: 8rem;
+      font-size: 8rem;
+      color: $secondary-color;
+      font-weight: bolder;
+      letter-spacing: 5px;
+    }
+    &-desc {
+      padding-top: 3rem;
+      font-size: 2rem;
+      line-height: 3rem;
+      padding-right: 14rem;
+    }
+    &-btn {
+      margin-top: 5rem;
+      padding: 1rem 3rem;
+      background-color: #e6c8c3;
+      color: #484f5b;
+      font-size: 2rem;
+      text-transform: uppercase;
+      font-weight: bolder;
+      border: none;
+    }
+    &-right-bottom-1 {
+      position: absolute;
+      right: 0%;
+      bottom: 0%;
+    }
+    &-right-bottom-2 {
+      position: absolute;
+      right: 0%;
+      bottom: 0%;
+    }
+    &-right-bottom-3 {
+      position: absolute;
+      right: 0%;
+      bottom: 3%;
+    }
+    &-left-middle-1 {
+      position: absolute;
+      left: 16%;
+      bottom: 18%;
+    }
+    &-left-middle-2 {
+      position: absolute;
+      left: 11%;
+      bottom: 50%;
+    }
+    &-right-top-1 {
+      position: absolute;
+      right: 2%;
+      top: 0%;
+      z-index: 2;
+    }
+    &-right-top-2 {
+      position: absolute;
+      right: 7%;
+      top: 0%;
+      z-index: 1;
+    }
+    &-right-top-3 {
+      position: absolute;
+      right: 0%;
+      top: 0%;
+      z-index: 0;
+    }
+    &-left-top-1 {
+      position: absolute;
+      left: 0%;
+      top: 0%;
+      z-index: 0;
+    }
+    &-left-top-2 {
+      position: absolute;
+      left: 0%;
+      top: 0%;
+      z-index: 1;
+    }
+    &-2 {
+      position: relative;
+    }
+    &-2-inner {
+      background-image: url(images/banner2.png);
+      height: 80rem;
+    }
+    &-2-content {
+      width: 60%;
+      padding: 5rem;
+      padding-top: 15rem;
+      // position: absolute;
+      left: 50%;
+      top: 25%;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .banner {
+      &-inner {
+        flex-direction: column;
+      }
+      &-col-1 {
+        width: 100%;
+      }
+      &-col-2 {
+        width: 100%;
+        padding-top: 5rem;
+      }
+      &-desc {
+        padding-right: 2rem;
+      }
+      &-2-content {
+        width: 100%;
+      }
+    }
+  }

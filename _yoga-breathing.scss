@@ -1,0 +1,121 @@
+// yoga breathing section
+.yoga-breathing {
+    height: 85rem;
+    position: relative;
+    &-inner {
+      display: flex;
+      padding: 20rem 0rem;
+    }
+  
+    &-content {
+      width: 50%;
+      padding: 2rem;
+    }
+  
+    &-image {
+      width: 50%;
+      padding: 3rem;
+      z-index: 50;
+    }
+  
+    &-wrapper-left-top-corner-1 {
+      position: absolute;
+      left: 0%;
+      top: 0%;
+      z-index: 0;
+    }
+  
+    &-wrapper-left-top-corner-2 {
+      position: absolute;
+      left: 0%;
+      top: 0%;
+    }
+  
+    &-wrapper-left-bottom-corner-1 {
+      position: absolute;
+      left: 1%;
+      bottom: 9%;
+    }
+  
+    &-wrapper-left-bottom-corner-2 {
+      position: absolute;
+      left: 0%;
+      bottom: 0%;
+      z-index: 10;
+    }
+  
+    &-left-top-corner-1 {
+      position: absolute;
+      left: 47%;
+      top: 19%;
+    }
+  
+    &-left-top-corner-2 {
+      position: absolute;
+      left: 47%;
+      top: 19%;
+    }
+  
+    &-left-top-corner-1 {
+      position: absolute;
+      left: 47%;
+      top: 19%;
+    }
+  
+    &-left-top-corner-2 {
+      position: absolute;
+      left: 47%;
+      top: 19%;
+    }
+  
+    &-left-bottom-corner {
+      position: absolute;
+      left: 50%;
+      bottom: 19%;
+      z-index: 200;
+    }
+  
+    &-right-top-corner-1 {
+      position: absolute;
+      right: 3%;
+      top: 19%;
+    }
+  
+    &-right-top-corner-2 {
+      position: absolute;
+      right: 2%;
+      top: 19%;
+    }
+  
+    &-right-bottom-corner-1 {
+      position: absolute;
+      right: 2%;
+      bottom: 19%;
+      z-index: 500;
+    }
+  
+    &-right-bottom-corner-2 {
+      position: absolute;
+      right: 2%;
+      bottom: 19%;
+      z-index: 500;
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    .yoga-breathing {
+      height: 1050px;
+      &-inner {
+        flex-direction: column;
+        height: 900px;
+        padding: 5rem;
+      }
+      &-content {
+        width: 100%;
+      }
+      &-image {
+        width: 100%;
+      }
+    }
+  }
+  
