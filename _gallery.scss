@@ -55,63 +55,39 @@
     }
     
     &-left-top-1 {
-      position: absolute;
-      left: 0%;
-      top: 0%;
-      z-index: 0;
+      @include lt-pos(0%,0%,0);
     }
     
     &-left-top-2 {
-      position: absolute;
-      left: 0%;
-      top: 0%;
+      @include lt-pos(0%,0%,0);
     }
     
     &-left-bottom-1 {
-      position: absolute;
-      left: 0%;
-      bottom: -2%;
-      z-index: -1;
+      @include lb-pos(0%,-2%,-1);
     }
     
     &-left-bottom-2 {
-      position: absolute;
-      left: 0%;
-      bottom: 0%;
-      z-index: -2;
+      @include lb-pos(0%,0%,-2);
     }
     
     &-right-top-1 {
-      position: absolute;
-      right: 0%;
-      top: -3%;
-      z-index: 100;
+      @include rt-pos(0%,-3%,100);
     }
     
     &-right-top-2 {
-      position: absolute;
-      right: 0%;
-      top: 10%;
+      @include rt-pos(0%,10%,0);
     }
     
     &-right-top-3 {
-      position: absolute;
-      right: 0%;
-      top: 0%;
+      @include rt-pos(0%,0%,0);
     }
     
     &-right-bottom-1 {
-      position: absolute;
-      right: 0%;
-      bottom: 0%;
-      z-index: 0;
+      @include rb-pos(0%,0%,0);
     }
     
     &-right-bottom-2 {
-      position: absolute;
-      right: 0%;
-      bottom: 0%;
-      z-index: 0;
+      @include rb-pos(0%,0%,0);
     }
   }
   

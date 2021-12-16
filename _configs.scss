@@ -1,0 +1,76 @@
+// btn 
+@mixin btn(){
+    margin-top: 5rem;
+      padding: 1rem 3rem;
+      background-color: #e6c8c3;
+      color: #484f5b;
+      font-size: 2rem;
+      text-transform: uppercase;
+      font-weight: bolder;
+      border: none;
+}
+
+// position design
+@mixin lt-pos($left,$top,$z-index){
+    position: absolute;
+    left: $left;
+    top: $top;
+    z-index: $z-index;
+}
+@mixin lb-pos($left,$bottom,$z-index){
+    position: absolute;
+    left: $left;
+    bottom: $bottom;
+    z-index: $z-index;
+}
+@mixin rt-pos($right,$top,$z-index){
+    position: absolute;
+    right: $right;
+    top: $top;
+    z-index: $z-index;
+}
+@mixin rb-pos($right,$bottom,$z-index){
+    position: absolute;
+    right: $right;
+    bottom: $bottom;
+    z-index: $z-index;
+}
+
+//Flex space between
+@mixin flex-space-between(){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@mixin flex-center(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Set các  giá trị với màn hình tương ứng */
+$mobile-width: 480px;
+$tablet-width: 768px;
+$desktop-width: 1024px;
+
+
+@mixin mobile {
+    @media (max-width: #{$mobile-width - 1px}){
+        @content;
+    }
+}
+@mixin big-mobile{
+    @media (min-width: #{$mobile-width}) and (max-width: #{$tablet-width - 1px}) {
+        @content;
+    }
+}
+@mixin tablet{
+    @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}){
+        @content;
+    }
+}
+@mixin desktop {
+    @media (min-width: #{$desktop-width}){
+        @content;
+    }
+}

@@ -1,5 +1,6 @@
 @import "header";
 @import "variables";
+@import "configs";
 @import "banner";
 @import "program";
 @import "yoga-breathing";
@@ -9,58 +10,5 @@
 @import "form-message";
 @import "footer";
 
-html {
-  font-size: 62.5%; //1 rem = 10px
-}
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-}
-img {
-  display: block;
-  max-width: 100%;
-}
-body {
-  font-family: $font-primary;
-  color: $secondary-color;
-}
-//1440px, 1263px
-.wrapper {
-  max-width: $wrapper;
-  margin: 0 auto;
-}
 
-.container {
-  margin: 0 auto;
-  max-width: 1303px;
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
-.to-top {
-  background: $fourth-color;
-  position: fixed;
-  bottom: 16px;
-  right: 32px;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 32px;
-  color: $third-color;
-  text-decoration: none;
-  opacity: 0;
-  pointer-events: none;
-  transition: all 0.4s;
-}
-
-.to-top.active {
-  bottom: 32px;
-  pointer-events: auto;
-  opacity: 1;
-}
 

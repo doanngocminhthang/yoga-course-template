@@ -1,73 +1,131 @@
 @import "variables";
+@import "configs";
 .footer {
-    height: 32.4rem;
-    background-color: $secondary-color;
-    &-inner {
-      display: flex;
-      padding: 5rem 20rem;
-      font-size: 1.5rem;
-      line-height: 3rem;
-      color: $fourth-color;
+  height: 32.4rem;
+  background-color: $secondary-color;
+
+  &-inner {
+    display: flex;
+    padding: 5rem 15rem;
+    font-size: 1.5rem;
+    line-height: 3rem;
+    color: $fourth-color;
+    @include mobile {
+      padding: 5rem 1rem;
     }
-    
-    &-address {
-      width: 20%;
+    @include big-mobile {
+      padding: 5rem 2rem;
+      font-size: 1.2rem;
     }
-    
-    &-sitemap {
-      width: 15%;
-    }
-    
-    &-content-1 {
-      width: 15%;
-    }
-    
-    &-content-2 {
-      width: 15%;
-    }
-    
-    &-copy-right {
-      width: 35%;
-    }
-    
-    &-address {
-      font-size: 1.5rem;
-    }
-    
-    &-title {
-      font-size: 3rem;
-      padding-bottom: 3rem;
-      font-weight: bold;
-    }
-    
-    &-tilte-small {
-      font-size: 2rem;
-      font-weight: bold;
-    }
-    
-    &-image {
-      padding-bottom: 3rem;
-    }
-    
-    &-social {
-      display: flex;
-      margin-top: 2rem;
-    }
-    
-    &-fb {
-      background: white;
-      padding: 0.5rem;
-    }
-    
-    &-tw {
-      background: white;
-      padding: 0.5rem;
-      margin-left: 2rem;
-    }
-  
-    &-insta {
-      background: white;
-      padding: 0.5rem;
-      margin-left: 2rem;
+    @include tablet {
+      padding: 5rem 3rem;
     }
   }
+  &-address {
+    width: 20%;
+    @include mobile {
+      width: 23%;
+    }
+    @include big-mobile {
+      width: 23%;
+    }
+    @include tablet {
+      width: 23%;
+    }
+  }
+  &-sitemap {
+    width: 20%;
+    @include mobile {
+      width: 17%;
+    }
+    @include big-mobile {
+      width: 20%;
+    }
+    @include tablet {
+      width: 20%;
+    }
+  }
+
+  &-content-1 {
+    width: 20%;
+    @include big-mobile {
+      width: 20%;
+    }
+    @include tablet {
+      width: 20%;
+    }
+  }
+
+  &-content-2 {
+    width: 20%;
+    @include big-mobile {
+      width: 20%;
+    }
+    @include tablet {
+      width: 20%;
+    }
+  }
+
+  &-copy-right {
+    width: 20%;
+    @include big-mobile {
+      width: 20%;
+    }
+    @include tablet {
+      width: 20%;
+    }
+  }
+
+  &-address {
+    font-size: 1.5rem;
+  }
+
+  &-title {
+    font-size: 3rem;
+    padding-bottom: 3rem;
+    font-weight: bold;
+    @include big-mobile {
+      font-size: 1.7rem;
+    }
+    @include tablet {
+      font-size: 2rem;
+    }
+  }
+
+  &-tilte-small {
+    font-size: 2rem;
+    font-weight: bold;
+    @include big-mobile {
+      font-size: 1.7rem;
+    }
+    @include tablet {
+      font-size: 1.7rem;
+    }
+  }
+
+  &-image {
+    padding-bottom: 3rem;
+  }
+
+  &-social {
+    display: flex;
+    margin-top: 2rem;
+  }
+
+  &-fb {
+    background: white;
+    padding: 0.5rem;
+  }
+
+  &-tw {
+    background: white;
+    padding: 0.5rem;
+    margin-left: 2rem;
+  }
+
+  &-insta {
+    background: white;
+    padding: 0.5rem;
+    margin-left: 2rem;
+  }
+}

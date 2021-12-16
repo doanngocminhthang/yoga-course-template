@@ -1,55 +1,78 @@
 @import "variables";
+@import "configs";
+html {
+  font-size: 62.5%; //1 rem = 10px
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+body {
+  font-family: $font-primary;
+  color: $secondary-color;
+}
+//1440px, 1263px
+.wrapper {
+  max-width: $wrapper;
+  margin: 0 auto;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1303px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+
 .header {
     padding-top: 4rem;
     justify-content: space-between;
      a:hover {
       color: $secondary-color;
     }
-    &-inner {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
     &-logo {
       width: 9.2rem;
       height: 8rem;
     }
-    &-menu-list {
-      display: flex;
-      font-size: 2.1rem;
-    }
-    &-menu-link {
-      list-style-type: none;
-      text-decoration: none;
-      color: $secondary-color;
-      display: inline-block;
-    }
-    &-menu-item {
-      padding-right: 8.2rem;
-      .cool-link::after {
-        content: "";
-        display: block;
-        width: 0;
-        height: 2px;
-        background: #e6c8c3;
-        transition: width 0.3s;
+    &-inner {
+      @include flex-space-between();
+      div.header-menu{
+        ul{
+          display: flex;
+          font-size: 2.1rem;
+          li{
+            padding-right: 8.2rem;
+            a{
+              list-style-type: none;
+              text-decoration: none;
+              color: $secondary-color;
+              display: inline-block;
+              &::after{
+                content: "";
+                display: block;
+                width: 0;
+                height: 2px;
+                background: #e6c8c3;
+                transition: width 0.3s;
+              }
+              &:hover::after{
+                width: 100%;
+                transition: width 0.3s;
+              }
+            }
+          }
+        }
       }
-      
-      .cool-link:hover::after {
-        width: 100%;
-        transition: width 0.3s;
-      }
-    }
-    &-icon {
-      display: none;
-      text-decoration: none;
-      color: $third-color;
     }
     &-mobile {
       display: none;
-      justify-content: space-between;
-      align-items: center;
-      padding: 0 2rem;
       label{
         i{font-size: 2.4rem;}
       }
@@ -75,7 +98,6 @@
           transform: translateX(100%);
           transition: transform linear 0.4s;
           z-index: 999;
-          
         }
         &-mobile-list {
           margin-top: 24px;
@@ -97,9 +119,7 @@
         &-mobile-close {
           font-size: 1.4rem;
           color: $fifth-color ;
-          position: absolute;
-          right: 1rem;
-          top: 1rem;
+          @include rt-pos(1rem,1rem,0);
         }
         &-input:checked ~ .nav-overlay {
           display: block;
@@ -127,7 +147,8 @@
       display: none;
     }
     &-mobile{
-      display: flex;
+      @include flex-space-between();
+      padding: 0 2rem;
     }
   }
 }
