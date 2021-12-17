@@ -1,65 +1,65 @@
 .program {
+  &-inner {
+    display: flex;
+    width: 100%;
+    align-items: baseline;
+    height: 47rem;
+    padding-top: 6rem;
+  }
+  &-content {
+    width: 33.333333%;
+    padding: 5rem;
+    padding-left: 14rem;
+    position: relative;
+    text-align: center;
+  }
+  &-title {
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding-top: 3rem;
+  }
+  &-desc {
+    font-size: 1.8rem;
+    padding-top: 6px;
+  }
+}
+.bg-program {
+  &-1-image {
+    position: absolute;
+  }
+
+  &-2-image {
+    position: absolute;
+  }
+
+  &-3-image {
+    position: absolute;
+  }
+}
+
+@media (max-width: 1024px) {
+  .program {
+    height: 850px;
     &-inner {
-      display: flex;
+      flex-direction: column;
       width: 100%;
-      align-items: baseline;
-      height: 47rem;
-      padding-top: 6rem;
+      padding: 1rem;
+      text-align: center;
+      height: 850px;
     }
     &-content {
-      width: 33.333333%;
-      padding: 5rem;
-      padding-left: 14rem;
-      position: relative;
-      text-align: center;
+      width: 100%;
+      padding: 1rem;
+      padding-top: 50px;
     }
-    &-title {
-      font-size: 3rem;
-      font-weight: bold;
-      letter-spacing: 1px;
-      padding-top: 3rem;
-    }
-    &-desc {
-      font-size: 1.8rem;
-      padding-top: 6px;
+    &-content > img {
+      margin: 0 auto;
     }
   }
-  .bg-program {
-    &-1-image {
-      position: absolute;
-    }
-  
-    &-2-image {
-      position: absolute;
-    }
-  
-    &-3-image {
-      position: absolute;
-    }
+  .bg-program-1-image,
+  .bg-program-2-image,
+  .bg-program-3-image {
+    left: 40%;
   }
-  
-  @media (max-width: 1024px) {
-    .program {
-      height: 850px;
-      &-inner {
-        flex-direction: column;
-        width: 100%;
-        padding: 1rem;
-        text-align: center;
-        height: 850px;
-      }
-      &-content {
-        width: 100%;
-        padding: 1rem;
-        padding-top: 50px;
-      }
-      &-content > img {
-        margin: 0 auto;
-      }
-    }
-    .bg-program-1-image,
-    .bg-program-2-image,
-    .bg-program-3-image {
-      left: 40%;
-    }
-  }
+}

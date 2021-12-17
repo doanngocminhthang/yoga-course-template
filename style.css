@@ -203,20 +203,60 @@ body {
 }
 @media (max-width: 479px) {
   .banner-col-2 {
-    width: 100%;
     padding-top: 5rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 }
 @media (min-width: 480px) and (max-width: 767px) {
   .banner-col-2 {
-    width: 100%;
     padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   .banner-col-2 {
-    width: 100%;
     padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+.banner-col-2 a {
+  text-decoration: none;
+}
+@media (max-width: 479px) {
+  .banner-col-2 a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .banner-col-2 a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .banner-col-2 a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 .banner-title {
@@ -284,19 +324,16 @@ body {
 @media (max-width: 479px) {
   .banner-btn {
     padding-right: 2rem;
-    text-align: center;
   }
 }
 @media (min-width: 480px) and (max-width: 767px) {
   .banner-btn {
     padding-right: 2rem;
-    text-align: center;
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   .banner-btn {
     padding-right: 2rem;
-    text-align: center;
   }
 }
 .banner-right-bottom-1 {
@@ -366,6 +403,21 @@ body {
   background-image: url(images/banner2.png);
   height: 80rem;
 }
+@media (max-width: 479px) {
+  .banner-2-inner {
+    height: 60rem;
+  }
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .banner-2-inner {
+    height: 60rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .banner-2-inner {
+    height: 60rem;
+  }
+}
 .banner-2-content {
   width: 60%;
   padding: 5rem;
@@ -375,17 +427,59 @@ body {
 }
 @media (max-width: 479px) {
   .banner-2-content {
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
     width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 }
 @media (min-width: 480px) and (max-width: 767px) {
   .banner-2-content {
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
     width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   .banner-2-content {
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
     width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+.banner-2-content a {
+  text-decoration: none;
+}
+@media (max-width: 479px) {
+  .banner-2-content a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .banner-2-content a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .banner-2-content a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -461,6 +555,64 @@ body {
 .yoga-breathing-content {
   width: 50%;
   padding: 2rem;
+}
+@media (max-width: 479px) {
+  .yoga-breathing-content {
+    padding-top: 5rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .yoga-breathing-content {
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .yoga-breathing-content {
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+.yoga-breathing-content a {
+  text-decoration: none;
+}
+@media (max-width: 479px) {
+  .yoga-breathing-content a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .yoga-breathing-content a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .yoga-breathing-content a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .yoga-breathing-image {
   width: 50%;
@@ -569,6 +721,21 @@ body {
   font-weight: bolder;
   letter-spacing: 5px;
   text-align: center;
+}
+@media (max-width: 479px) {
+  .gallery-title {
+    font-size: 5rem;
+  }
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .gallery-title {
+    font-size: 5rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .gallery-title {
+    font-size: 5rem;
+  }
 }
 .gallery-desc {
   text-align: center;
@@ -692,12 +859,87 @@ body {
   padding: 3rem;
   padding-top: 7rem;
 }
+@media (max-width: 479px) {
+  .discount-course-content {
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .discount-course-content {
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .discount-course-content {
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+.discount-course-content a {
+  text-decoration: none;
+}
+@media (max-width: 479px) {
+  .discount-course-content a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .discount-course-content a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .discount-course-content a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .discount-course-title {
   line-height: 8rem;
   font-size: 7rem;
   color: #484f5b;
   font-weight: bolder;
   letter-spacing: 3px;
+}
+@media (max-width: 479px) {
+  .discount-course-title {
+    text-align: center;
+    font-size: 5rem;
+  }
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .discount-course-title {
+    text-align: center;
+    font-size: 5rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .discount-course-title {
+    text-align: center;
+    font-size: 5rem;
+  }
 }
 .discount-course-desc {
   padding-top: 3rem;
@@ -738,9 +980,71 @@ body {
   height: 75rem;
   background-color: #e6c8c3;
 }
+@media (min-width: 768px) and (max-width: 1023px) {
+  .yoga-training {
+    height: 50rem;
+  }
+}
 .yoga-training-inner {
   display: flex;
   padding-top: 15rem;
+}
+@media (max-width: 479px) {
+  .yoga-training-inner {
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .yoga-training-inner {
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .yoga-training-inner {
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+.yoga-training-inner a {
+  text-decoration: none;
+}
+@media (max-width: 479px) {
+  .yoga-training-inner a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .yoga-training-inner a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .yoga-training-inner a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .yoga-training-title {
   line-height: 6rem;
@@ -760,12 +1064,63 @@ body {
   width: 50%;
   position: relative;
 }
+@media (max-width: 479px) {
+  .yoga-training-image {
+    display: none;
+  }
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .yoga-training-image {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .yoga-training-image {
+    display: none;
+  }
+}
 .yoga-training-content {
   width: 50%;
+}
+@media (max-width: 479px) {
+  .yoga-training-content {
+    width: 100%;
+  }
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .yoga-training-content {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .yoga-training-content {
+    width: 100%;
+  }
 }
 .yoga-training-group-icon {
   display: flex;
   margin-top: 3rem;
+}
+@media (max-width: 479px) {
+  .yoga-training-group-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .yoga-training-group-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .yoga-training-group-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .yoga-training-item-1 {
   padding: 1rem 1.5rem;
@@ -788,34 +1143,6 @@ body {
   top: 34%;
 }
 
-@media (max-width: 1024px) {
-  .yoga-training {
-    height: 750px;
-  }
-  .yoga-training-inner {
-    flex-direction: column;
-    height: 2px;
-    padding: 3rem 2rem;
-  }
-  .yoga-training-image {
-    width: 100%;
-  }
-  .yoga-training-content {
-    width: 100%;
-    height: 50%;
-  }
-  .yoga-training-title {
-    margin-top: 0;
-  }
-
-  .play-button {
-    left: 23%;
-  }
-
-  .training-video {
-    height: 300px;
-  }
-}
 .form-message {
   padding-bottom: 5rem;
   position: relative;
@@ -854,10 +1181,11 @@ body {
 .form-message-form {
   display: flex;
   flex-direction: column;
-  text-align: center;
-  align-items: center;
-  position: absolute;
   width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: absolute;
   left: 0%;
 }
 .form-message-left-top-1 {
@@ -919,19 +1247,21 @@ body {
   border: #948f8f;
   margin-top: 2rem;
   color: #948f8f;
-  height: 5rem;
   padding: 2rem 3rem;
   background-color: #efefef;
+  font-size: 1.5rem;
+  font-family: "PT Sans", sans-serif;
+  height: 5rem;
 }
 .form-message textarea {
   width: 70%;
-  font-family: "PT Sans", sans-serif;
-  font-size: 1.6rem;
   border: #948f8f;
   margin-top: 2rem;
   color: #948f8f;
   padding: 2rem 3rem;
   background-color: #efefef;
+  font-size: 1.5rem;
+  font-family: "PT Sans", sans-serif;
 }
 
 /* Set các  giá trị với màn hình tương ứng */

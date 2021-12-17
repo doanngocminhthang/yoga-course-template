@@ -9,6 +9,17 @@
       font-weight: bolder;
       border: none;
 }
+//input
+@mixin input($font-size){
+    width: 70%;
+    border: $sixth-color;
+    margin-top: 2rem;
+    color: $sixth-color;
+    padding: 2rem 3rem;
+    background-color: $seventh-color;
+    font-size: $font-size;
+    font-family: "PT Sans", sans-serif;
+}
 
 // position design
 @mixin lt-pos($left,$top,$z-index){
@@ -36,7 +47,7 @@
     z-index: $z-index;
 }
 
-//Flex space between
+//Flex space between, center, column;
 @mixin flex-space-between(){
     display: flex;
     justify-content: space-between;
@@ -46,6 +57,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+@mixin flex-column() {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 /* Set các  giá trị với màn hình tương ứng */

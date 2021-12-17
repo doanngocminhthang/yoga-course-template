@@ -11,6 +11,30 @@
     margin-left: 50%;
     padding: 3rem;
     padding-top: 7rem;
+    @include mobile{
+      padding-top: 5rem;
+      @include flex-column;
+    }
+    @include big-mobile{
+      padding-top: 5rem;
+      @include flex-column;
+    }
+    @include tablet{ 
+      padding-top: 5rem;
+      @include flex-column;
+    }
+    a {
+      text-decoration: none;
+      @include mobile {
+        @include flex-center;
+      }
+      @include big-mobile {
+        @include flex-center;
+      }
+      @include tablet {
+        @include flex-center;
+      }
+    }
   }
   &-title {
     line-height: 8rem;
@@ -18,6 +42,18 @@
     color: #484f5b;
     font-weight: bolder;
     letter-spacing: 3px;
+    @include mobile {
+      text-align: center;
+      font-size: 5rem;
+    }
+    @include big-mobile {
+      text-align: center;
+      font-size: 5rem;
+    }
+    @include tablet {
+      text-align: center;
+      font-size: 5rem;
+    }
   }
   &-desc {
     padding-top: 3rem;

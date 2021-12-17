@@ -2,11 +2,39 @@
 
 // yoga training section 
 .yoga-training {
-    height: 75rem;
+  height: 75rem;  
     background-color: $primary-color;
+    @include tablet{ 
+      height: 50rem;
+    }
     &-inner {
       display: flex;
       padding-top: 15rem;
+      @include mobile{
+        padding-top: 5rem;
+        @include flex-column;
+      }
+      @include big-mobile{
+        padding-top: 5rem;
+        @include flex-column;
+      }
+      @include tablet{ 
+        
+        padding-top: 5rem;
+        @include flex-column;
+      }
+      a {
+        text-decoration: none;
+        @include mobile {
+          @include flex-center;
+        }
+        @include big-mobile {
+          @include flex-center;
+        }
+        @include tablet {
+          @include flex-center;
+        }
+      }
     }
     
     &-title {
@@ -28,14 +56,41 @@
     &-image {
       width: 50%;
       position: relative;
+      @include mobile {
+        display: none;
+      }
+      @include big-mobile {
+        display: none;
+      }
+      @include tablet {
+        display: none;
+      }
     }
     &-content {
       width: 50%;
+      @include mobile {
+        width: 100%;
+      }
+      @include big-mobile {
+        width: 100%;
+      }
+      @include tablet {
+        width: 100%;
+      }
     }
     
     &-group-icon {
       display: flex;
       margin-top: 3rem;
+        @include mobile {
+          @include flex-center;
+        }
+        @include big-mobile {
+          @include flex-center;
+        }
+        @include tablet {
+          @include flex-center;
+        }
     }
     
     &-item-1 {
@@ -62,29 +117,3 @@
     top: 34%;
   }
   
-  @media (max-width: 1024px) {
-    .yoga-training {
-      height: 750px;
-      &-inner {
-        flex-direction: column;
-        height: 2px;
-        padding: 3rem 2rem;
-      }
-      &-image {
-        width: 100%;
-      }
-      &-content {
-        width: 100%;
-        height: 50%;
-      }
-      &-title {
-        margin-top: 0;
-      }
-    }
-    .play-button {
-      left: 23%;
-    }
-    .training-video {
-      height: 300px;
-    }
-  }
